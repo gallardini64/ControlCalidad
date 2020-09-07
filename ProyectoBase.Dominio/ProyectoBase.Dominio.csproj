@@ -41,11 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClaseEjemplo.cs" />
+    <Compile Include="Calidad.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Defecto.cs" />
+    <Compile Include="EspecificacionDeDefecto.cs" />
+    <Compile Include="Estado.cs" />
+    <Compile Include="Modelo.cs" />
+    <Compile Include="OrdenDeProduccion.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="Contratos\IRepository.cs" />
     <Compile Include="Contratos\IUnitOfWork.cs" />
+    <Compile Include="Par.cs" />
+    <Compile Include="Periodo.cs" />
+    <Compile Include="Pie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo.cs" />
+    <Compile Include="Turno.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

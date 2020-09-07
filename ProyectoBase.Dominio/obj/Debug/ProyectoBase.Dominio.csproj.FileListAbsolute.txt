@@ -4,3 +4,9 @@ D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dom
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csprojAssemblyReference.cache
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb
