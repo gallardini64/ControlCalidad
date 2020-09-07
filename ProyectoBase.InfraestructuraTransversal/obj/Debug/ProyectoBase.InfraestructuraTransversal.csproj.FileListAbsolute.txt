@@ -1,0 +1,6 @@
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csprojAssemblyReference.cache
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb

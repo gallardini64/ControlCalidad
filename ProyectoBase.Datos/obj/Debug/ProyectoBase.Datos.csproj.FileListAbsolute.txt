@@ -1,0 +1,14 @@
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll.config
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.pdb
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\EntityFramework.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.pdb
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\EntityFramework.xml
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csprojAssemblyReference.cache
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CoreCompileInputs.cache
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CopyComplete
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.dll
+D:\Luciano\curso C#\ProyectoBase\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
