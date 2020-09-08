@@ -19,6 +19,11 @@ namespace ProyectoBase.Presentadores
         private readonly IRepository<OrdenDeProduccion> _repository;
         private readonly IRepository<EspecificacionDeDefecto> _repositoryED;
 
+        internal void ActualizarOP()
+        {
+            throw new NotImplementedException();
+        }
+
         public PresentadorOP(IRepository<OrdenDeProduccion> repository, IRepository<EspecificacionDeDefecto> repositoryED)
         {
             _repository = repository;
