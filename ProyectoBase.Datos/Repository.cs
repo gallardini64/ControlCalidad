@@ -32,7 +32,7 @@ namespace ProyectoBase.Datos
         }
         #endregion
 
-        public IUnitOfWork UnitOfWork => _unitOfWork;
+        public IUnitOfWork UnitOfWork => _unitOfWork;   
 
         public void Agregar(T item)
         {

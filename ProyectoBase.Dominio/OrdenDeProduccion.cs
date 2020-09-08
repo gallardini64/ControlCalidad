@@ -11,13 +11,13 @@ namespace ProyectoBase.Dominio
     {
         public int Numero { get; set; }
         public DateTime Fecha { get; set; }
-        public IEnumerable<Defecto> Defectos { get; set; }
-        public IEnumerable<Par> Pares { get; set; }
-        public IEnumerable<Periodo> Periodos { get; set; }
+        public ICollection<Defecto> Defectos { get; set; }
+        public ICollection<Par> Pares { get; set; }
+        public ICollection<Periodo> Periodos { get; set; }
         public Modelo Modelo { get; set; }
         public Color Color { get; set; }
+        
         private Estado estado;
-
         public string Estado
         {
             set
@@ -43,7 +43,18 @@ namespace ProyectoBase.Dominio
                 return estado.ToString();
             }
         }
+        public LineaDeTrabajo LineaDeTrabajo { get; set; }
 
+        public void AgregarDefecto(EspecificacionDeDefecto especDe, string text, DateTime now)
+        {
+            var defecto = new Defecto(especDe, text, now);
+            Defectos.Add(defecto);
+        }
+
+        public OrdenDeProduccion()
+        {
+            Defectos = new List<Defecto>();
+        }
     }
     
 }

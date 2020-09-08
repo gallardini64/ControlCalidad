@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoBase.Interfaces
+namespace ProyectoBase.Dominio
 {
-    public interface IEjemplo: IVistaInteractiva
+    public class SupervisorCalidad : Empleado
     {
-        
+
     }
 }

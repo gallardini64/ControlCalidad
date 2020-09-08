@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoBase.Dominio;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -11,7 +12,7 @@ namespace ProyectoBase.Datos
 {
     public class Contexto : DbContext, IQueryableUnitOfWork
     {
-        public Contexto() : base("name=NombreBaseDeDatos")
+        public Contexto() : base("name=ControlCalidadDB")
         {
 
         }
@@ -43,6 +44,19 @@ namespace ProyectoBase.Datos
          Aqui van los DbSet ej:
         public DbSet<Departament> Departaments { get; set; }
          */
+        public DbSet<Color> Colores { get; set; }
+        public DbSet<Defecto> Defectos { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<EspecificacionDeDefecto> EspecificacionDeDefectos { get; set; }
+        public DbSet<LineaDeTrabajo> LineasDeTrabajos { get; set; }
+        public DbSet<Modelo> Modelos { get; set; }
+        public DbSet<OrdenDeProduccion> OrdenesDeProduccion { get; set; }
+        public DbSet<Par> Pares { get; set; }
+        public DbSet<Periodo> Periodos { get; set; }
+        public DbSet<Turno> Turnos { get; set; }
+
+
+
 
 
 

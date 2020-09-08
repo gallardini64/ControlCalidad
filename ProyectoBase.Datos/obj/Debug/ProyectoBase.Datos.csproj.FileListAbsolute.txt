@@ -26,3 +26,5 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\Pro
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CopyComplete
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.dll
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.inicial.resources
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache

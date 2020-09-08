@@ -54,3 +54,5 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoB
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Presentacion.csproj.CopyComplete
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.exe
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.VistaOP.resources
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaSupervisorLinea.resources

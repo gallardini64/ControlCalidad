@@ -2,7 +2,7 @@
 
 namespace ProyectoBase.Dominio
 {
-    public class Par
+    public class Par : EntityBase
     {
         public DateTime Hora { get; set; }
 

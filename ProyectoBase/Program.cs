@@ -21,7 +21,7 @@ namespace ProyectoBase
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<Form1>());
+            Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>());
         }
     }
 }

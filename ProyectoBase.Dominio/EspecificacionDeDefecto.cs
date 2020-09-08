@@ -24,5 +24,11 @@
                 return tipo.ToString();
             }
         }
+
+
+        public override string ToString()
+        {
+            return descripcion;
+        }
     }
 }

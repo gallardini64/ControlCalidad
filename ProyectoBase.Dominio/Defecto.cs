@@ -10,7 +10,14 @@ namespace ProyectoBase.Dominio
     {
         private Pie pie;
 
-        public String Pie
+        public Defecto(EspecificacionDeDefecto especDe, string text, DateTime now)
+        {
+            hora = now;
+            Pie = text;
+            especificacion = especDe;
+        }
+
+        public string Pie
         {
             set {
                 if (value == "DERECHO")
@@ -19,8 +26,16 @@ namespace ProyectoBase.Dominio
                 }
                 else
                 {
-                    this.pie = Dominio.Pie.IZQUIERDO;
+                    if (value == "AMBOS")
+                    {
+                        this.pie = Dominio.Pie.AMBOS;
+                    }
+                    else
+                    {
+                        this.pie = Dominio.Pie.IZQUIERDO;
+                    }
                 }
+                
             }
             get
             {

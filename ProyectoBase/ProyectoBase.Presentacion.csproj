@@ -65,14 +65,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentadores\PresentadorEjemplo.cs" />
-    <Compile Include="Vistas\Form1.cs">
+    <Compile Include="Presentadores\PresentadorOP.cs" />
+    <Compile Include="Vistas\VistaOP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vistas\VistaOP.Designer.cs">
+      <DependentUpon>VistaOP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IEjemplo.cs" />
+    <Compile Include="Interfaces\IVistaOP.cs" />
     <Compile Include="Interfaces\IVistaInteractiva.cs" />
     <Compile Include="IoC\IoCUnityContainer.cs" />
     <Compile Include="Presentadores\PresentadorBase.cs" />
@@ -80,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\FormBase.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaSupervisorLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaSupervisorLinea.Designer.cs">
+      <DependentUpon>VistaSupervisorLinea.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +96,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\VistaOP.resx">
+      <DependentUpon>VistaOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaSupervisorLinea.resx">
+      <DependentUpon>VistaSupervisorLinea.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ProyectoBase.Dominio.Defecto.datasource" />
+    <None Include="Properties\DataSources\ProyectoBase.Dominio.OrdenDeProduccion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

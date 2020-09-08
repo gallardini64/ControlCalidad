@@ -8,6 +8,6 @@ namespace ProyectoBase.Dominio
 {
     public enum Pie
     {
-        DERECHO,IZQUIERDO
+        DERECHO,IZQUIERDO,AMBOS
     }
 }
