@@ -30,22 +30,31 @@ namespace ProyectoBase.Presentadores
             _vistaSL = vista;
             _vistaSL.Show();
         }
-
-        internal void GenerarOtraVista()
-        {
-            setVistaSL(IoCFactory.Instance.CurrentContainer.Resolve<VistaSupervisorLinea>());
-        }
-
-        internal void AgregarDefecto(int v, string text)
+        #region EVENTOS CU6
+        private void AgregarDefecto(int v, string text)
         {
             var especDe = _repositoryED.Get(v);
             _op.AgregarDefecto(especDe, text, DateTime.Now);
             ActualizarVistaDatos();
         }
+        #endregion
+
+
+
+        private void GenerarOtraVista()
+        {
+            setVistaSL(IoCFactory.Instance.CurrentContainer.Resolve<VistaSupervisorLinea>());
+        }
+
+       
+
+
+
 
         private void ActualizarVistaDatos()
         {
             _vistaSL.ListarDefectos(_op.Defectos);
         }
+
     }
 }
