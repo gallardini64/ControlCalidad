@@ -27,6 +27,7 @@ namespace ProyectoBase
             
         }
 
+
         private void buttonMas1_Click(object sender, EventArgs e)
         {
             Presentador.AgregarDefecto(1, comboBox1.Text);

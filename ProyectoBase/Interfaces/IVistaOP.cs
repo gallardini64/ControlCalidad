@@ -8,6 +8,6 @@ namespace ProyectoBase.Interfaces
 {
     public interface IVistaOP: IVistaInteractiva
     {
-        
+
     }
 }

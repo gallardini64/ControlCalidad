@@ -65,7 +65,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IVistaAcceso.cs" />
+    <Compile Include="Presentadores\PresentadorAcceso.cs" />
     <Compile Include="Presentadores\PresentadorOP.cs" />
+    <Compile Include="Vistas\VistaAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaAcceso.Designer.cs">
+      <DependentUpon>VistaAcceso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\VistaOP.cs">
       <SubType>Form</SubType>
     </Compile>

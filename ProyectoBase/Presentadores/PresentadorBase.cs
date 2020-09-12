@@ -13,6 +13,7 @@ namespace ProyectoBase.Presentadores
 
         public void SetVista(T vista)
         {
+         
             Vista = vista;
         }
     }

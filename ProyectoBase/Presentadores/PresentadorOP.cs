@@ -36,7 +36,7 @@ namespace ProyectoBase.Presentadores
             _vistaSL.Show();
         }
         #region EVENTOS CU6
-        private void AgregarDefecto(int v, string text)
+        internal void AgregarDefecto(int v, string text)
         {
             var especDe = _repositoryED.Get(v);
             _op.AgregarDefecto(especDe, text, DateTime.Now);
@@ -46,7 +46,7 @@ namespace ProyectoBase.Presentadores
 
 
 
-        private void GenerarOtraVista()
+        internal void GenerarOtraVista()
         {
             setVistaSL(IoCFactory.Instance.CurrentContainer.Resolve<VistaSupervisorLinea>());
         }
@@ -56,7 +56,7 @@ namespace ProyectoBase.Presentadores
 
 
 
-        private void ActualizarVistaDatos()
+        internal void ActualizarVistaDatos()
         {
             _vistaSL.ListarDefectos(_op.Defectos);
         }

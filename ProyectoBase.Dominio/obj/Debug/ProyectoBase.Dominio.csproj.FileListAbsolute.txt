@@ -10,3 +10,9 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\P
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.dll
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csprojAssemblyReference.cache
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb

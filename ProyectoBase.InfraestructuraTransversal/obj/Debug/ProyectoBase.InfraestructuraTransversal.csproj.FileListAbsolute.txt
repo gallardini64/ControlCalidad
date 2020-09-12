@@ -4,3 +4,9 @@ D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Deb
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
 D:\Luciano\curso C#\ProyectoBase\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csprojAssemblyReference.cache
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
