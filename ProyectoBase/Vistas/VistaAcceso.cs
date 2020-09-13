@@ -14,6 +14,7 @@ namespace ProyectoBase.Vistas
 {
     public partial class VistaAcceso : FormBase<PresentadorAcceso>, IVistaAcceso
     {
+     
         public VistaAcceso(PresentadorAcceso presentador): base(presentador)
         {
             InitializeComponent();
@@ -40,7 +41,7 @@ namespace ProyectoBase.Vistas
             Application.Exit();
         }
 
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void ingresar_Click(object sender, EventArgs e)
         {
             Ingresar(tbUsuario.Text, tbPass.Text);
         }
@@ -52,7 +53,11 @@ namespace ProyectoBase.Vistas
 
         public void desplegar()
         {
-            Show();
+            ShowDialog();
         }
+        //public void mostrar(object sender, bool valor)
+        //{
+        //    MessageBox.Show("hola");
+        //}
     }
 }

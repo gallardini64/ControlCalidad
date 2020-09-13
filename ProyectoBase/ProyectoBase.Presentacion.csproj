@@ -69,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IVistaAcceso.cs" />
-    <Compile Include="Interfaces\IVistaAcceso2.cs" />
     <Compile Include="Interfaces\IVistaInicio.cs" />
     <Compile Include="Presentadores\PresentadorAcceso.cs" />
     <Compile Include="Presentadores\PresentadorInicio.cs" />

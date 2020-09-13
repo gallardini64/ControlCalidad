@@ -62,3 +62,5 @@ G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Inicial.resources
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf

@@ -21,22 +21,15 @@ namespace ProyectoBase.Vistas
             InitializeComponent();
             Presentador.SetVista(this);
             acceso = IoCFactory.Instance.CurrentContainer.Resolve<VistaAcceso>();
+            //PRUEBA Presentador.RelojCambiaHora += acceso.mostrar;
             acceso.desplegar();
             
         }
 
         private void VistaInicio_Load(object sender, EventArgs e)
         {
-            Hide();
+          Hide();
         }
-        protected override void SetVisibleCore(bool value)
-        {
-            if (!this.IsHandleCreated)
-            {
-                value = false;
-                CreateHandle();
-            }
-            base.SetVisibleCore(value);
-        }
+
     }
 }

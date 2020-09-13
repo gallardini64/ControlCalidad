@@ -1,4 +1,5 @@
-﻿using ProyectoBase.InfraestructuraTransversal.IoC;
+﻿using ProyectoBase.InfraestructuraTransversal;
+using ProyectoBase.InfraestructuraTransversal.IoC;
 using ProyectoBase.IoC;
 using ProyectoBase.Vistas;
 using System;
@@ -19,10 +20,11 @@ namespace ProyectoBase
         {
             //Inicializa el contenedor de DI
             IoCFactory.Instance.SetContainer(new IoCUnityContainer());
-
+            Reloj.CambioDeHora();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaInicio>());
+            
         }
     }
 }

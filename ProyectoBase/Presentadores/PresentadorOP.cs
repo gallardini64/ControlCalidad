@@ -1,6 +1,7 @@
 ﻿using ProyectoBase.Datos;
 using ProyectoBase.Dominio;
 using ProyectoBase.Dominio.Contratos;
+using ProyectoBase.InfraestructuraTransversal;
 using ProyectoBase.InfraestructuraTransversal.IoC;
 using ProyectoBase.Interfaces;
 using ProyectoBase.Vistas;
@@ -28,6 +29,7 @@ namespace ProyectoBase.Presentadores
         {
             _repository = repository;
             _repositoryED = repositoryED;
+            Reloj.RelojCambiaHora += guardarDatosHora;
         }
 
         public void setVistaSL(VistaSupervisorLinea vista)
@@ -36,11 +38,16 @@ namespace ProyectoBase.Presentadores
             _vistaSL.Show();
         }
         #region EVENTOS CU6
-        internal void AgregarDefecto(int v, string text)
+        public void AgregarDefecto(int v, string text)
         {
             var especDe = _repositoryED.Get(v);
             _op.AgregarDefecto(especDe, text, DateTime.Now);
             ActualizarVistaDatos();
+        }
+        private void guardarDatosHora(object sender,bool cambiaHora = true)
+        {
+            _op.ActualizarHorasOcupadas();
+            // TO DO //
         }
         #endregion
 

@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace ProyectoBase.InfraestructuraTransversal
 {
-    public class Reloj
+    public static class Reloj
     {
-        public event EventHandler<bool> CambiaHora;
+        public static EventHandler<bool> RelojCambiaHora;
 
-        public void Tiempo(Action metodo)
+        public static void OnRelojCambia(bool cambiaHora)
         {
-           
+            RelojCambiaHora?.Invoke(typeof(Reloj), cambiaHora);
         }
-        public void OnCambiaHora()
+
+        public static async Task CambioDeHora()
         {
-            CambiaHora?.Invoke(this, true);
+            while (true)
+            {
+                await Task.Delay((60 - DateTime.Now.Minute)*60* 1000); //(min)*60(seg/min)*(1000ms/seg)
+                OnRelojCambia(true);
+            }
         }
+
+
     }
 }

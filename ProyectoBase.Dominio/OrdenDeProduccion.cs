@@ -18,6 +18,10 @@ namespace ProyectoBase.Dominio
         public Color Color { get; set; }
         
         private Estado estado;
+        public OrdenDeProduccion()
+        {
+            Defectos = new List<Defecto>();
+        }
         public string Estado
         {
             set
@@ -50,10 +54,10 @@ namespace ProyectoBase.Dominio
             var defecto = new Defecto(especDe, text, now);
             Defectos.Add(defecto);
         }
-
-        public OrdenDeProduccion()
+        public void ActualizarHorasOcupadas()
         {
-            Defectos = new List<Defecto>();
+            Periodos.LastOrDefault().cantidadDeHorasOcupadas++;
+            // TODO //
         }
     }
     

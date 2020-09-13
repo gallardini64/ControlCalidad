@@ -15,6 +15,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,9 +68,9 @@
   <ItemGroup>
     <Compile Include="Contexto.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
-    <Compile Include="Migrations\202009130317316_Inicial.cs" />
-    <Compile Include="Migrations\202009130317316_Inicial.designer.cs">
-      <DependentUpon>202009130317316_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\202009132156365_Inicial.cs" />
+    <Compile Include="Migrations\202009132156365_Inicial.designer.cs">
+      <DependentUpon>202009132156365_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,13 +102,20 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DB\" />
+    <EmbeddedResource Include="Migrations\202009132156365_Inicial.resx">
+      <DependentUpon>202009132156365_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009130317316_Inicial.resx">
-      <DependentUpon>202009130317316_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="DB\ControlCalidadDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\ControlCalidadDB_log.ldf">
+      <DependentUpon>ControlCalidadDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
