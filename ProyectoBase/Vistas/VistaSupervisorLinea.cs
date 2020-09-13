@@ -40,5 +40,10 @@ namespace ProyectoBase.Vistas
         {
             defectoBindingSource.DataSource = defectos.ToList();
         }
+
+        public void Desplegar()
+        {
+            Show();
+        }
     }
 }

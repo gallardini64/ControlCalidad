@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingSourceOP = new System.Windows.Forms.BindingSource(this.components);
-            this.defectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.especificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.defectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceOP = new System.Windows.Forms.BindingSource(this.components);
             this.numeroOP = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,18 +52,10 @@
             this.especificacionDataGridViewTextBoxColumn,
             this.idDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.defectoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 62);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(375, 151);
+            this.dataGridView1.Size = new System.Drawing.Size(431, 151);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // bindingSourceOP
-            // 
-            this.bindingSourceOP.DataSource = typeof(ProyectoBase.Dominio.OrdenDeProduccion);
-            // 
-            // defectoBindingSource
-            // 
-            this.defectoBindingSource.DataSource = typeof(ProyectoBase.Dominio.Defecto);
             // 
             // pieDataGridViewTextBoxColumn
             // 
@@ -89,6 +81,14 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
+            // defectoBindingSource
+            // 
+            this.defectoBindingSource.DataSource = typeof(ProyectoBase.Dominio.Defecto);
+            // 
+            // bindingSourceOP
+            // 
+            this.bindingSourceOP.DataSource = typeof(ProyectoBase.Dominio.OrdenDeProduccion);
+            // 
             // numeroOP
             // 
             this.numeroOP.AutoSize = true;
@@ -103,14 +103,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 270);
+            this.ClientSize = new System.Drawing.Size(475, 270);
             this.Controls.Add(this.numeroOP);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaSupervisorLinea";
             this.Text = "VistaSupervisorLinea";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

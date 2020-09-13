@@ -62,5 +62,11 @@
     <Compile Include="Tipo.cs" />
     <Compile Include="Turno.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoBase.InfraestructuraTransversal\ProyectoBase.InfraestructuraTransversal.csproj">
+      <Project>{2A94D348-4612-469B-A44E-972D691B80E2}</Project>
+      <Name>ProyectoBase.InfraestructuraTransversal</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

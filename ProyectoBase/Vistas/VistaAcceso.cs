@@ -20,9 +20,39 @@ namespace ProyectoBase.Vistas
             Presentador.SetVista(this);
         }
 
+        private void header_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(sender, e);
+        }
+
+        private void header_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUp(sender, e);
+        }
+
+        private void header_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove(sender, e);
+        }
+
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Ingresar(tbUsuario.Text, tbPass.Text);
+        }
+
         public void Ingresar(string username, string password)
         {
-            throw new NotImplementedException();
+            Presentador.Ingresar(username, password);
+        }
+
+        public void desplegar()
+        {
+            Show();
         }
     }
 }

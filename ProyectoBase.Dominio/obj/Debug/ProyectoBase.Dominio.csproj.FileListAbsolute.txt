@@ -16,3 +16,6 @@ G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debu
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CopyComplete

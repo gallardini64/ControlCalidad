@@ -15,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,9 +68,9 @@
   <ItemGroup>
     <Compile Include="Contexto.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
-    <Compile Include="Migrations\202009120527492_Inicial.cs" />
-    <Compile Include="Migrations\202009120527492_Inicial.designer.cs">
-      <DependentUpon>202009120527492_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\202009130317316_Inicial.cs" />
+    <Compile Include="Migrations\202009130317316_Inicial.designer.cs">
+      <DependentUpon>202009130317316_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,10 +85,29 @@
       <Project>{3C712EC7-BE31-4739-B151-93C372DAD790}</Project>
       <Name>ProyectoBase.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProyectoBase.InfraestructuraTransversal\ProyectoBase.InfraestructuraTransversal.csproj">
+      <Project>{2A94D348-4612-469B-A44E-972D691B80E2}</Project>
+      <Name>ProyectoBase.InfraestructuraTransversal</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009120527492_Inicial.resx">
-      <DependentUpon>202009120527492_Inicial.cs</DependentUpon>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009130317316_Inicial.resx">
+      <DependentUpon>202009130317316_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

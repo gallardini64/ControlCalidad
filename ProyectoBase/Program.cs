@@ -1,5 +1,6 @@
 ﻿using ProyectoBase.InfraestructuraTransversal.IoC;
 using ProyectoBase.IoC;
+using ProyectoBase.Vistas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace ProyectoBase
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>());
+            Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaInicio>());
         }
     }
 }

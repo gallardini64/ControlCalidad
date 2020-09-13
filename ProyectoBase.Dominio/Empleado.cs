@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoBase.InfraestructuraTransversal.Seguridad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace ProyectoBase.Dominio
         public int Documento { get; set; }
         public string Apellido_Nombre { get; set; }
         public string Email { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

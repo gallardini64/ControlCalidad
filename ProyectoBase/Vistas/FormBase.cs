@@ -21,12 +21,16 @@ namespace ProyectoBase.Vistas
     public class FormBase<T> : Form, IVistaInteractiva
     {
         protected T Presentador;
+        #region Movimiento
+        protected int mov;
+        protected int movX;
+        protected int movY;
+        #endregion
 
         public FormBase()
         {
 
         }
-
         public FormBase(T presentador)
         {
             Presentador = presentador;
@@ -53,6 +57,41 @@ namespace ProyectoBase.Vistas
         {
             MessageBox.Show(mensaje, "PAV", MessageBoxButtons.OK,
                 esError ? MessageBoxIcon.Error : MessageBoxIcon.Information);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // FormBase
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "FormBase";
+            this.Load += new System.EventHandler(this.FormBase_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        protected void FormBase_Load(object sender, EventArgs e)
+        {
+            this.Location = Screen.AllScreens[1].WorkingArea.Location;
+        }
+        protected void mouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX =e.X;
+            movY =e.Y;
+        }
+        protected void mouseMove(object sender, MouseEventArgs e)
+        {
+            if(mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+        protected void mouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

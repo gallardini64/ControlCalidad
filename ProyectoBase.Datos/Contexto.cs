@@ -1,4 +1,5 @@
 ﻿using ProyectoBase.Dominio;
+using ProyectoBase.InfraestructuraTransversal.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -54,11 +55,8 @@ namespace ProyectoBase.Datos
         public DbSet<Par> Pares { get; set; }
         public DbSet<Periodo> Periodos { get; set; }
         public DbSet<Turno> Turnos { get; set; }
-
-
-
-
-
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Rol> Roles{ get; set; }
 
         #region IQueryableUnitOfWork Miembros
         public void Confirmar()

@@ -12,6 +12,16 @@ namespace ProyectoBase.InfraestructuraTransversal.Seguridad
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
+        public Rol Rol { get; set; }
+
+        public Usuario(int id, string username, string password, string email, Rol rol)
+        {
+            Id = id;
+            Username = username;
+            Password = password;
+            Email = email;
+            Rol = rol;
+        }
 
     }
 }

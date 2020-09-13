@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -66,13 +69,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IVistaAcceso.cs" />
+    <Compile Include="Interfaces\IVistaAcceso2.cs" />
+    <Compile Include="Interfaces\IVistaInicio.cs" />
     <Compile Include="Presentadores\PresentadorAcceso.cs" />
+    <Compile Include="Presentadores\PresentadorInicio.cs" />
     <Compile Include="Presentadores\PresentadorOP.cs" />
     <Compile Include="Vistas\VistaAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\VistaAcceso.Designer.cs">
       <DependentUpon>VistaAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaInicio.Designer.cs">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\VistaOP.cs">
       <SubType>Form</SubType>
@@ -104,6 +116,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaAcceso.resx">
+      <DependentUpon>VistaAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaInicio.resx">
+      <DependentUpon>VistaInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaOP.resx">
       <DependentUpon>VistaOP.cs</DependentUpon>
     </EmbeddedResource>

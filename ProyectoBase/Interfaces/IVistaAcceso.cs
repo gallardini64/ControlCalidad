@@ -9,5 +9,6 @@ namespace ProyectoBase.Interfaces
     public interface IVistaAcceso
     {
         void Ingresar(string username, string password);
+        void desplegar();
     }
 }

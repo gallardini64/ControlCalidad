@@ -27,6 +27,10 @@ namespace ProyectoBase
             
         }
 
+        public void Desplegar()
+        {
+            Show();
+        }
 
         private void buttonMas1_Click(object sender, EventArgs e)
         {

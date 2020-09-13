@@ -50,12 +50,6 @@ namespace ProyectoBase.Presentadores
         {
             setVistaSL(IoCFactory.Instance.CurrentContainer.Resolve<VistaSupervisorLinea>());
         }
-
-       
-
-
-
-
         internal void ActualizarVistaDatos()
         {
             _vistaSL.ListarDefectos(_op.Defectos);
