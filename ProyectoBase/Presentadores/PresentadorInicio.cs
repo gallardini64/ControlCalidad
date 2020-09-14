@@ -28,7 +28,12 @@ namespace ProyectoBase.Presentadores
         }
         public void OtorgarPermiso(object sender, Sesion sesion)
         {
-            Vista.MostrarMensaje(sesion.Usuario.Email);
+            // CONVERTIR EN CLASE ESTRATEGIA?
+            if (sesion.Usuario.Rol.Id == 1)
+            {
+                VistaOP vistaOP = IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>();
+                vistaOP.Desplegar();
+            } 
         }
         //public virtual void OnCambioDeHora(object sender, bool cambiaHora)
         //{

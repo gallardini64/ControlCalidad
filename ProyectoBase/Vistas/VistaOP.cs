@@ -16,8 +16,7 @@ namespace ProyectoBase
 {
     public partial class VistaOP : FormBase<PresentadorOP> , IVistaOP
     {
-        
-
+       
         public VistaOP(PresentadorOP presentador) : base(presentador)
         {
             InitializeComponent();
