@@ -1,4 +1,5 @@
 ﻿using ProyectoBase.InfraestructuraTransversal;
+using ProyectoBase.InfraestructuraTransversal.IoC;
 using ProyectoBase.InfraestructuraTransversal.Seguridad;
 using ProyectoBase.Interfaces;
 using ProyectoBase.Vistas;
@@ -14,17 +15,25 @@ namespace ProyectoBase.Presentadores
     public class PresentadorInicio : PresentadorBase<IVistaInicio>
     {
         
-        public Sesion Sesion { get; set; }
-
         public static VistaSupervisorLinea sup;
         public PresentadorInicio()
         {
-            Reloj.RelojCambiaHora += OnCambioDeHora;
+            //EJEMPLO Reloj.RelojCambiaHora += OnCambioDeHora;
         }
-        public virtual void OnCambioDeHora(object sender,bool cambiaHora)
+        public void DesplegarVistaInicioDeSesion()
         {
-            Vista.MostrarMensaje("hola");
+            PresentadorAcceso presentadorAcceso = new PresentadorAcceso(OtorgarPermiso);
+            VistaAcceso acceso = new VistaAcceso(presentadorAcceso);
+            acceso.desplegar();
         }
+        public void OtorgarPermiso(object sender, Sesion sesion)
+        {
+            Vista.MostrarMensaje(sesion.Usuario.Email);
+        }
+        //public virtual void OnCambioDeHora(object sender, bool cambiaHora)
+        //{
+        //    Vista.MostrarMensaje("hola");
+        //}
 
         //public EventHandler<bool> RelojCambiaHora;
         //public PresentadorInicio()

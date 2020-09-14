@@ -15,15 +15,11 @@ namespace ProyectoBase.Vistas
 {
     public partial class VistaInicio : FormBase<PresentadorInicio>, IVistaInicio
     {
-        private VistaAcceso acceso;
         public VistaInicio(PresentadorInicio presentador): base(presentador)
         {
             InitializeComponent();
             Presentador.SetVista(this);
-            acceso = IoCFactory.Instance.CurrentContainer.Resolve<VistaAcceso>();
-            //PRUEBA Presentador.RelojCambiaHora += acceso.mostrar;
-            acceso.desplegar();
-            
+            Presentador.DesplegarVistaInicioDeSesion();
         }
 
         private void VistaInicio_Load(object sender, EventArgs e)

@@ -24,7 +24,6 @@ namespace ProyectoBase
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaInicio>());
-            
         }
     }
 }

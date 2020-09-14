@@ -13,13 +13,14 @@ namespace ProyectoBase.Presentadores
 {
     public class PresentadorAcceso : PresentadorBase<IVistaAcceso>
     {
-        public PresentadorAcceso()
+        public EventHandler<Sesion> InicioSesion;
+        public PresentadorAcceso(EventHandler<Sesion> suscriptor)
         {
+            InicioSesion += suscriptor;
         }
-
-        public Sesion Ingresar(string username, string password)
+        public void Ingresar(string username, string password)
         {
-            return FactoriaDeSesiones.Instance.IniciarSesion(buscarUsuario(username), password);
+            InicioSesion?.Invoke(this, FactoriaDeSesiones.Instance.IniciarSesion(buscarUsuario(username), password));
         }
         private Usuario buscarUsuario(string username)
         {

@@ -15,6 +15,7 @@ namespace ProyectoBase.InfraestructuraTransversal.Seguridad
 
         public Sesion(Usuario usuario)
         {
+            Usuario = usuario;
             Inicio = DateTime.Now;
             IsActiva = true;
         }

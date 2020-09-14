@@ -3,6 +3,7 @@ using ProyectoBase.Dominio;
 using ProyectoBase.Dominio.Contratos;
 using ProyectoBase.InfraestructuraTransversal;
 using ProyectoBase.InfraestructuraTransversal.IoC;
+using ProyectoBase.InfraestructuraTransversal.Seguridad;
 using ProyectoBase.Interfaces;
 using ProyectoBase.Vistas;
 using System;
@@ -19,17 +20,19 @@ namespace ProyectoBase.Presentadores
         private OrdenDeProduccion _op = new OrdenDeProduccion();
         private readonly IRepository<OrdenDeProduccion> _repository;
         private readonly IRepository<EspecificacionDeDefecto> _repositoryED;
-
+        private Sesion _sesion;
         internal void ActualizarOP()
         {
             throw new NotImplementedException();
         }
 
-        public PresentadorOP(IRepository<OrdenDeProduccion> repository, IRepository<EspecificacionDeDefecto> repositoryED)
+        public PresentadorOP(Sesion sesion,IRepository<OrdenDeProduccion> repository, IRepository<EspecificacionDeDefecto> repositoryED)
         {
             _repository = repository;
             _repositoryED = repositoryED;
+            _sesion = sesion;
             Reloj.RelojCambiaHora += guardarDatosHora;
+            
         }
 
         public void setVistaSL(VistaSupervisorLinea vista)
