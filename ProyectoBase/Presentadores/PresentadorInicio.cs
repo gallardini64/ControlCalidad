@@ -24,16 +24,17 @@ namespace ProyectoBase.Presentadores
         {
             PresentadorAcceso presentadorAcceso = new PresentadorAcceso(OtorgarPermiso);
             VistaAcceso acceso = new VistaAcceso(presentadorAcceso);
-            acceso.desplegar();
+            acceso.Desplegar();
         }
         public void OtorgarPermiso(object sender, Sesion sesion)
-        {
+        { 
             // CONVERTIR EN CLASE ESTRATEGIA?
             if (sesion.Usuario.Rol.Id == 1)
             {
                 VistaOP vistaOP = IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>();
                 vistaOP.Desplegar();
-            } 
+            }
+
         }
         //public virtual void OnCambioDeHora(object sender, bool cambiaHora)
         //{

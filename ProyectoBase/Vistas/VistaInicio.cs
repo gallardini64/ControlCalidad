@@ -22,9 +22,16 @@ namespace ProyectoBase.Vistas
             Presentador.DesplegarVistaInicioDeSesion();
         }
 
+        public void Ocultar()
+        {
+            Hide();
+            this.Opacity = 0;
+            this.ShowInTaskbar = false;
+        }
+
         private void VistaInicio_Load(object sender, EventArgs e)
         {
-          Hide();
+            Ocultar();
         }
 
     }

@@ -21,6 +21,7 @@ namespace ProyectoBase.Presentadores
         public void Ingresar(string username, string password)
         {
             InicioSesion?.Invoke(this, FactoriaDeSesiones.Instance.IniciarSesion(buscarUsuario(username), password));
+            Vista.Cerrar();
         }
         private Usuario buscarUsuario(string username)
         {

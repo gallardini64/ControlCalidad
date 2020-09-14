@@ -8,5 +8,6 @@ namespace ProyectoBase.Interfaces
 {
     public interface IVistaInicio: IVistaInteractiva
     {
+        void Ocultar();
     }
 }

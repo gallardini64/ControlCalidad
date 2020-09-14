@@ -19,6 +19,8 @@ namespace ProyectoBase.Vistas
         {
             InitializeComponent();
             Presentador.SetVista(this);
+            CenterToScreen();
+            tbPass.isPassword = true;
         }
 
         private void header_MouseDown(object sender, MouseEventArgs e)
@@ -51,9 +53,14 @@ namespace ProyectoBase.Vistas
             Presentador.Ingresar(username, password);
         }
 
-        public void desplegar()
+        public void Desplegar()
         {
-            ShowDialog();
+            Show();
+        }
+
+        private void tbPass_OnValueChanged(object sender, EventArgs e)
+        {
+            tbPass.isPassword = true;
         }
         //public void mostrar(object sender, bool valor)
         //{

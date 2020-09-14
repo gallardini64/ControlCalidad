@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVHhe7dI7SgNRAIVhV5MJivFRKArBB6Ig6gQEGyur
-        4ALsLCwkGjd9ZRwwzd3APXzFV51T/lvHJ/MCSURNHFETR9TEETVxRE2c/6gPzx/L9t17mSx+oDlDu/uX
-        z5uoDy6eyrRfVc/Qim6xKntXL2PU0/uP6gla0/VfY9S1EVolauKImjiiJo6oiSNq4oiaOKImjqiJI2ri
-        iJo4oiaOqIkjauKImjiiJo6oiSNq4oiaOKImjqiJI2riiJo4oibOX9Tdw2d1hPasx6hn18sy6b8rB2jJ
-        uuzcvo1RD3ZvXisnaMcQ9NHp2SZqSCFq4oiaOKImjqgJMy+/q4JOMtVb1lUAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="cerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
@@ -143,6 +133,16 @@
         mTGlBAwr2XFV7sSmZxvLvQQMK9hBJZ3VLTNiA9O1BAwL2RH1+pR2O8O2rsWtBAwL2D8n2Pl8aoYcWmy4
         lIBhATuKtiNpmu7jqoxcCVMLMFRC10FlISqh6eYNhhXWJTQfUTdYl9B88wbDSlZC0z8ndLIb77p5g2Ek
         GEaCYSQYRoJhJBhGgmEkGEaCYSQYRoJhJBhGgmEcu4O/w2mzLReaTYkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVHhe7dI7SgNRAIVhV5MJivFRKArBB6Ig6gQEGyur
+        4ALsLCwkGjd9ZRwwzd3APXzFV51T/lvHJ/MCSURNHFETR9TEETVxRE2c/6gPzx/L9t17mSx+oDlDu/uX
+        z5uoDy6eyrRfVc/Qim6xKntXL2PU0/uP6gla0/VfY9S1EVolauKImjiiJo6oiSNq4oiaOKImjqiJI2ri
+        iJo4oiaOqIkjauKImjiiJo6oiSNq4oiaOKImjqiJI2riiJo4oibOX9Tdw2d1hPasx6hn18sy6b8rB2jJ
+        uuzcvo1RD3ZvXisnaMcQ9NHp2SZqSCFq4oiaOKImjqgJMy+/q4JOMtVb1lUAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
