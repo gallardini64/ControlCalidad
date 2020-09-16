@@ -32,7 +32,17 @@ namespace ProyectoBase.Vistas
         private void VistaInicio_Load(object sender, EventArgs e)
         {
             Ocultar();
+            
         }
 
+        private void header_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove(sender, e);
+        }
+
+        private void header_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(sender, e);
+        }
     }
 }

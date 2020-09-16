@@ -133,3 +133,5 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\DB\Contro
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.FormBase.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaAcceso.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaInicio.resources
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.Modelos.resources
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaGestionarModelo.resources

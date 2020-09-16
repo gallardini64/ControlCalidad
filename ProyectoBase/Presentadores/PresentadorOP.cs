@@ -48,7 +48,7 @@ namespace ProyectoBase.Presentadores
         private void guardarDatosHora(object sender,bool cambiaHora = true)
         {
             _op.ActualizarHorasOcupadas();
-            // TO DO //
+            _repository.Modificar(_op);
         }
         #endregion
 
