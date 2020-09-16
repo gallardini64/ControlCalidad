@@ -26,7 +26,7 @@ namespace ProyectoBase.Presentadores
         private Usuario buscarUsuario(string username)
         {
             SqlConnection con = new SqlConnection(
-             @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\DB\ControlCalidadDB.mdf;Integrated Security=True");
+             @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|DB\ControlCalidadDB.mdf;Integrated Security=True");
             con.Open();
             string sql = "SELECT Us.[Id], Us.[Username], Us.[Password],Us.[Email], Us.[Rol_Id], r.[Nombre] " +
                 "FROM Usuario AS Us INNER JOIN Rol AS r ON Us.[Rol_Id] = r.[Id] where Username = @username1;"; 
