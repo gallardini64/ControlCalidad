@@ -36,8 +36,9 @@ namespace ProyectoBase.Datos
             //    .Entity<Departament>()
             //    .ToTable("Departamentos");
 
-            
-
+            modelBuilder
+           .Entity<Modelo>()
+           .HasKey(m => m.SKU);
 
             base.OnModelCreating(modelBuilder);
         }

@@ -74,6 +74,12 @@
     <Compile Include="Presentadores\PresentadorAcceso.cs" />
     <Compile Include="Presentadores\PresentadorInicio.cs" />
     <Compile Include="Presentadores\PresentadorOP.cs" />
+    <Compile Include="Vistas\ControlesDeUsuario\Colores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlesDeUsuario\Colores.Designer.cs">
+      <DependentUpon>Colores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ControlesDeUsuario\Modelos.cs">
       <SubType>UserControl</SubType>
     </Compile>

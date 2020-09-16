@@ -68,9 +68,9 @@
   <ItemGroup>
     <Compile Include="Contexto.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
-    <Compile Include="Migrations\202009132156365_Inicial.cs" />
-    <Compile Include="Migrations\202009132156365_Inicial.designer.cs">
-      <DependentUpon>202009132156365_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\202009162254232_Inicial.cs" />
+    <Compile Include="Migrations\202009162254232_Inicial.designer.cs">
+      <DependentUpon>202009162254232_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,20 +102,13 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009132156365_Inicial.resx">
-      <DependentUpon>202009132156365_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="DB\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\ControlCalidadDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DB\ControlCalidadDB_log.ldf">
-      <DependentUpon>ControlCalidadDB.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <EmbeddedResource Include="Migrations\202009162254232_Inicial.resx">
+      <DependentUpon>202009162254232_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

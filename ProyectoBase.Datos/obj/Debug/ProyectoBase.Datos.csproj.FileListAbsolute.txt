@@ -60,10 +60,6 @@ J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
-G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Inicial.resources
-G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache
-G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
-G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
@@ -72,3 +68,5 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\bin\Debug\DB\
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Inicial.resources
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache

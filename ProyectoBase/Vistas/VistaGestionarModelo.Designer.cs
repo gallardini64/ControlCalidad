@@ -140,7 +140,7 @@
             // 
             // modelos1
             // 
-            this.modelos1.Location = new System.Drawing.Point(260, 159);
+            this.modelos1.Location = new System.Drawing.Point(122, 127);
             this.modelos1.Name = "modelos1";
             this.modelos1.Size = new System.Drawing.Size(840, 500);
             this.modelos1.TabIndex = 11;
