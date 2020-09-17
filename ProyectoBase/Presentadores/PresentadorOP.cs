@@ -20,18 +20,26 @@ namespace ProyectoBase.Presentadores
         private OrdenDeProduccion _op = new OrdenDeProduccion();
         private readonly IRepository<OrdenDeProduccion> _repository;
         private readonly IRepository<EspecificacionDeDefecto> _repositoryED;
-        internal void ActualizarOP()
-        {
-            throw new NotImplementedException();
-        }
 
         public PresentadorOP(IRepository<OrdenDeProduccion> repository, IRepository<EspecificacionDeDefecto> repositoryED)
         {
             _repository = repository;
             _repositoryED = repositoryED;
             Reloj.RelojCambiaHora += guardarDatosHora;
-            
+
         }
+        internal void ActualizarOP()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal List<EspecificacionDeDefecto> ObtenerEspecificacionesDefectos()
+        {
+            var especificacionesDefectos = _repositoryED.GetTodos();
+            return especificacionesDefectos.ToList();
+        }
+
+        
 
         public void setVistaSL(VistaSupervisorLinea vista)
         {
@@ -39,16 +47,23 @@ namespace ProyectoBase.Presentadores
             _vistaSL.Show();
         }
         #region EVENTOS CU6
-        public void AgregarDefecto(int v, string text)
+        public void AgregarDefecto(int id, string pie)
         {
-            var especDe = _repositoryED.Get(v);
-            _op.AgregarDefecto(especDe, text, DateTime.Now);
+            var especDe = _repositoryED.Get(id);
+            _op.AgregarDefecto(especDe, pie, DateTime.Now);
             ActualizarVistaDatos();
         }
         private void guardarDatosHora(object sender,bool cambiaHora = true)
         {
             _op.ActualizarHorasOcupadas();
             _repository.Modificar(_op);
+        }
+
+        internal void QuitarDefecto(int id)
+        {
+            var especDe = _repositoryED.Get(id);
+            _op.QuitarDefecto(especDe);
+            ActualizarVistaDatos();
         }
         #endregion
 
@@ -58,6 +73,7 @@ namespace ProyectoBase.Presentadores
         {
             setVistaSL(IoCFactory.Instance.CurrentContainer.Resolve<VistaSupervisorLinea>());
         }
+
         internal void ActualizarVistaDatos()
         {
             _vistaSL.ListarDefectos(_op.Defectos);

@@ -49,15 +49,21 @@ namespace ProyectoBase.Dominio
         }
         public LineaDeTrabajo LineaDeTrabajo { get; set; }
 
-        public void AgregarDefecto(EspecificacionDeDefecto especDe, string text, DateTime now)
+        public void AgregarDefecto(EspecificacionDeDefecto especDe, string pie, DateTime now)
         {
-            var defecto = new Defecto(especDe, text, now);
+            var defecto = new Defecto(especDe, pie, now);
             Defectos.Add(defecto);
         }
         public void ActualizarHorasOcupadas()
         {
             Periodos.LastOrDefault().cantidadDeHorasOcupadas++;
             // TODO //
+        }
+
+        public void QuitarDefecto(EspecificacionDeDefecto especDe)
+        {
+            var defecto = Defectos.LastOrDefault(d => d.especificacion == especDe);
+            Defectos.Remove(defecto);
         }
     }
     

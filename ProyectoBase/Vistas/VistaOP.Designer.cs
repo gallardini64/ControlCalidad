@@ -28,226 +28,200 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.contador4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttonMenos4 = new System.Windows.Forms.Button();
-            this.buttonMas4 = new System.Windows.Forms.Button();
-            this.contador3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buttonMenos3 = new System.Windows.Forms.Button();
-            this.buttonMas3 = new System.Windows.Forms.Button();
-            this.contador2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonMenos2 = new System.Windows.Forms.Button();
-            this.buttonMas2 = new System.Windows.Forms.Button();
-            this.labelContador1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonMenos1 = new System.Windows.Forms.Button();
-            this.buttonMas1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.bindingSourceED = new System.Windows.Forms.BindingSource(this.components);
+            this.DataGridDefectos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).BeginInit();
             this.SuspendLayout();
             // 
-            // contador4
+            // bindingSourceED
             // 
-            this.contador4.AutoSize = true;
-            this.contador4.Location = new System.Drawing.Point(208, 164);
-            this.contador4.Name = "contador4";
-            this.contador4.Size = new System.Drawing.Size(62, 13);
-            this.contador4.TabIndex = 15;
-            this.contador4.Text = "Contador: 0";
+            this.bindingSourceED.DataSource = typeof(ProyectoBase.Dominio.EspecificacionDeDefecto);
             // 
-            // label5
+            // DataGridDefectos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 164);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "defecto 4";
-            // 
-            // buttonMenos4
-            // 
-            this.buttonMenos4.Location = new System.Drawing.Point(147, 159);
-            this.buttonMenos4.Name = "buttonMenos4";
-            this.buttonMenos4.Size = new System.Drawing.Size(31, 23);
-            this.buttonMenos4.TabIndex = 13;
-            this.buttonMenos4.Text = "-";
-            this.buttonMenos4.UseVisualStyleBackColor = true;
-            // 
-            // buttonMas4
-            // 
-            this.buttonMas4.Location = new System.Drawing.Point(100, 159);
-            this.buttonMas4.Name = "buttonMas4";
-            this.buttonMas4.Size = new System.Drawing.Size(30, 23);
-            this.buttonMas4.TabIndex = 12;
-            this.buttonMas4.Text = "+";
-            this.buttonMas4.UseVisualStyleBackColor = true;
-            // 
-            // contador3
-            // 
-            this.contador3.AutoSize = true;
-            this.contador3.Location = new System.Drawing.Point(208, 121);
-            this.contador3.Name = "contador3";
-            this.contador3.Size = new System.Drawing.Size(62, 13);
-            this.contador3.TabIndex = 11;
-            this.contador3.Text = "Contador: 0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 121);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "defecto 3";
-            // 
-            // buttonMenos3
-            // 
-            this.buttonMenos3.Location = new System.Drawing.Point(147, 116);
-            this.buttonMenos3.Name = "buttonMenos3";
-            this.buttonMenos3.Size = new System.Drawing.Size(31, 23);
-            this.buttonMenos3.TabIndex = 9;
-            this.buttonMenos3.Text = "-";
-            this.buttonMenos3.UseVisualStyleBackColor = true;
-            // 
-            // buttonMas3
-            // 
-            this.buttonMas3.Location = new System.Drawing.Point(100, 116);
-            this.buttonMas3.Name = "buttonMas3";
-            this.buttonMas3.Size = new System.Drawing.Size(30, 23);
-            this.buttonMas3.TabIndex = 8;
-            this.buttonMas3.Text = "+";
-            this.buttonMas3.UseVisualStyleBackColor = true;
-            // 
-            // contador2
-            // 
-            this.contador2.AutoSize = true;
-            this.contador2.Location = new System.Drawing.Point(208, 76);
-            this.contador2.Name = "contador2";
-            this.contador2.Size = new System.Drawing.Size(62, 13);
-            this.contador2.TabIndex = 7;
-            this.contador2.Text = "Contador: 0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "defecto 2";
-            // 
-            // buttonMenos2
-            // 
-            this.buttonMenos2.Location = new System.Drawing.Point(147, 71);
-            this.buttonMenos2.Name = "buttonMenos2";
-            this.buttonMenos2.Size = new System.Drawing.Size(31, 23);
-            this.buttonMenos2.TabIndex = 5;
-            this.buttonMenos2.Text = "-";
-            this.buttonMenos2.UseVisualStyleBackColor = true;
-            // 
-            // buttonMas2
-            // 
-            this.buttonMas2.Location = new System.Drawing.Point(100, 71);
-            this.buttonMas2.Name = "buttonMas2";
-            this.buttonMas2.Size = new System.Drawing.Size(30, 23);
-            this.buttonMas2.TabIndex = 4;
-            this.buttonMas2.Text = "+";
-            this.buttonMas2.UseVisualStyleBackColor = true;
-            // 
-            // labelContador1
-            // 
-            this.labelContador1.AutoSize = true;
-            this.labelContador1.Location = new System.Drawing.Point(208, 33);
-            this.labelContador1.Name = "labelContador1";
-            this.labelContador1.Size = new System.Drawing.Size(62, 13);
-            this.labelContador1.TabIndex = 3;
-            this.labelContador1.Text = "Contador: 0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "defecto 1";
-            // 
-            // buttonMenos1
-            // 
-            this.buttonMenos1.Location = new System.Drawing.Point(147, 28);
-            this.buttonMenos1.Name = "buttonMenos1";
-            this.buttonMenos1.Size = new System.Drawing.Size(31, 23);
-            this.buttonMenos1.TabIndex = 1;
-            this.buttonMenos1.Text = "-";
-            this.buttonMenos1.UseVisualStyleBackColor = true;
-            // 
-            // buttonMas1
-            // 
-            this.buttonMas1.Location = new System.Drawing.Point(100, 28);
-            this.buttonMas1.Name = "buttonMas1";
-            this.buttonMas1.Size = new System.Drawing.Size(30, 23);
-            this.buttonMas1.TabIndex = 0;
-            this.buttonMas1.Text = "+";
-            this.buttonMas1.UseVisualStyleBackColor = true;
-            this.buttonMas1.Click += new System.EventHandler(this.buttonMas1_Click);
+            this.DataGridDefectos.AllowUserToAddRows = false;
+            this.DataGridDefectos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridDefectos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridDefectos.AutoGenerateColumns = false;
+            this.DataGridDefectos.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridDefectos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridDefectos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridDefectos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridDefectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridDefectos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.descripcionDataGridViewTextBoxColumn,
+            this.tipoDataGridViewTextBoxColumn,
+            this.Contador,
+            this.Id});
+            this.DataGridDefectos.DataSource = this.bindingSourceED;
+            this.DataGridDefectos.DoubleBuffered = true;
+            this.DataGridDefectos.EnableHeadersVisualStyles = false;
+            this.DataGridDefectos.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.DataGridDefectos.HeaderForeColor = System.Drawing.Color.Honeydew;
+            this.DataGridDefectos.Location = new System.Drawing.Point(-2, -1);
+            this.DataGridDefectos.Name = "DataGridDefectos";
+            this.DataGridDefectos.ReadOnly = true;
+            this.DataGridDefectos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridDefectos.Size = new System.Drawing.Size(342, 196);
+            this.DataGridDefectos.TabIndex = 17;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Location = new System.Drawing.Point(305, 33);
+            this.comboBox1.Location = new System.Drawing.Point(348, 92);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(134, 21);
             this.comboBox1.TabIndex = 16;
+            // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "-";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuFlatButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = null;
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(425, 31);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(57, 53);
+            this.bunifuFlatButton2.TabIndex = 18;
+            this.bunifuFlatButton2.Text = "-";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuFlatButton2.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "+";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = null;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(348, 31);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(57, 53);
+            this.bunifuFlatButton1.TabIndex = 19;
+            this.bunifuFlatButton1.Text = "+";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Contador
+            // 
+            this.Contador.HeaderText = "Contador";
+            this.Contador.Name = "Contador";
+            this.Contador.ReadOnly = true;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
             // VistaOP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 218);
+            this.ClientSize = new System.Drawing.Size(506, 200);
+            this.Controls.Add(this.bunifuFlatButton2);
+            this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.DataGridDefectos);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.contador4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.buttonMenos4);
-            this.Controls.Add(this.buttonMas4);
-            this.Controls.Add(this.contador3);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.buttonMenos3);
-            this.Controls.Add(this.buttonMas3);
-            this.Controls.Add(this.contador2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.buttonMenos2);
-            this.Controls.Add(this.buttonMas2);
-            this.Controls.Add(this.labelContador1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonMenos1);
-            this.Controls.Add(this.buttonMas1);
             this.Name = "VistaOP";
             this.Text = "VistaOP";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonMas1;
-        private System.Windows.Forms.Button buttonMenos1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelContador1;
-        private System.Windows.Forms.Label contador2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonMenos2;
-        private System.Windows.Forms.Button buttonMas2;
-        private System.Windows.Forms.Label contador4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonMenos4;
-        private System.Windows.Forms.Button buttonMas4;
-        private System.Windows.Forms.Label contador3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button buttonMenos3;
-        private System.Windows.Forms.Button buttonMas3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridDefectos;
+        private System.Windows.Forms.BindingSource bindingSourceED;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
     }
 }
 

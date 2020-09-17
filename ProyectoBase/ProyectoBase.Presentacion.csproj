@@ -157,6 +157,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ProyectoBase.Dominio.Defecto.datasource" />
+    <None Include="Properties\DataSources\ProyectoBase.Dominio.EspecificacionDeDefecto.datasource" />
     <None Include="Properties\DataSources\ProyectoBase.Dominio.Modelo.datasource" />
     <None Include="Properties\DataSources\ProyectoBase.Dominio.OrdenDeProduccion.datasource" />
     <None Include="Properties\Settings.settings">

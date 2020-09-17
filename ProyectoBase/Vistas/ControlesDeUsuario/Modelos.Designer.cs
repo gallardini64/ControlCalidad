@@ -34,10 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgModelo = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sKUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.denominacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbModelo = new System.Windows.Forms.Label();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -90,10 +90,6 @@
             this.dgModelo.Size = new System.Drawing.Size(738, 299);
             this.dgModelo.TabIndex = 0;
             // 
-            // bindingSource
-            // 
-            this.bindingSource.DataSource = typeof(ProyectoBase.Dominio.Modelo);
-            // 
             // sKUDataGridViewTextBoxColumn
             // 
             this.sKUDataGridViewTextBoxColumn.DataPropertyName = "SKU";
@@ -111,6 +107,10 @@
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // bindingSource
+            // 
+            this.bindingSource.DataSource = typeof(ProyectoBase.Dominio.Modelo);
             // 
             // lbModelo
             // 
