@@ -137,3 +137,6 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoB
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaGestionarModelo.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\DB\ControlCalidadDB.mdf
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\DB\ControlCalidadDB_log.ldf
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.Design.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.Fonts.dll

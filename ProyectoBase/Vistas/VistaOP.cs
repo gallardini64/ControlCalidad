@@ -23,8 +23,8 @@ namespace ProyectoBase
             Presentador.SetVista(this);
             CargarDefectos();
             Presentador.GenerarOtraVista();
-            comboBox1.DataSource = Enum.GetValues(typeof(Pie));
-            
+            cbPie.DataSource = Enum.GetValues(typeof(Pie));
+
         }
 
         private void CargarDefectos()
@@ -43,11 +43,21 @@ namespace ProyectoBase
             Show();
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void agregar_Click(object sender, EventArgs e)
         {
             int id = (int)DataGridDefectos.SelectedRows[0].Cells[3].Value;
-            var pie = comboBox1.Text;
-            Presentador.AgregarDefecto(id,pie);
+            var pie = cbPie.Text;
+            Presentador.AgregarDefecto(id, pie);
+            agregarDefectoATabla();
+        }
+        private void quitar_Click(object sender, EventArgs e)
+        {
+            int id = (int)DataGridDefectos.SelectedRows[0].Cells[3].Value;
+            Presentador.QuitarDefecto(id);
+            quitarDefectoDeTabla();
+        }
+        private void agregarDefectoATabla()
+        {
             var rowselected = DataGridDefectos.SelectedRows;
             if (rowselected[0].Cells[2].Value == null)
             {
@@ -57,11 +67,8 @@ namespace ProyectoBase
             contador++;
             rowselected[0].Cells[2].Value = contador;
         }
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        private void quitarDefectoDeTabla()
         {
-            int id = (int)DataGridDefectos.SelectedRows[0].Cells[3].Value;
-            Presentador.QuitarDefecto(id);
             var rowselected = DataGridDefectos.SelectedRows;
             if (rowselected[0].Cells[2].Value == null)
             {
@@ -73,7 +80,6 @@ namespace ProyectoBase
                 contador--;
                 rowselected[0].Cells[2].Value = contador;
             }
-            
         }
     }
 }
