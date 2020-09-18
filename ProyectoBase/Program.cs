@@ -23,7 +23,16 @@ namespace ProyectoBase
             Reloj.CambioDeHora();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>());
+            try
+            {
+                Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>());
+            }
+            catch (NullReferenceException)
+            {
+
+               
+            }
+            
         }
     }
 }

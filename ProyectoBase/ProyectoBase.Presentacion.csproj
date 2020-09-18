@@ -95,6 +95,12 @@
     <Compile Include="Vistas\ControlesDeUsuario\Modelos.Designer.cs">
       <DependentUpon>Modelos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ControlesDeUsuario\CrearOPVista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\ControlesDeUsuario\CrearOPVista.Designer.cs">
+      <DependentUpon>CrearOPVista.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\VistaAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
     <EmbeddedResource Include="Vistas\ControlesDeUsuario\Modelos.resx">
       <DependentUpon>Modelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ControlesDeUsuario\CrearOPVista.resx">
+      <DependentUpon>CrearOPVista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FormBase.resx">
       <DependentUpon>FormBase.cs</DependentUpon>

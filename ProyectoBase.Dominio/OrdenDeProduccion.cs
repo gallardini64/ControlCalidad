@@ -20,6 +20,7 @@ namespace ProyectoBase.Dominio
         private Estado estado;
         public OrdenDeProduccion()
         {
+            Periodos = new List<Periodo>();
             Defectos = new List<Defecto>();
         }
         public string Estado
@@ -64,6 +65,12 @@ namespace ProyectoBase.Dominio
         {
             var defecto = Defectos.LastOrDefault(d => d.especificacion == especDe);
             Defectos.Remove(defecto);
+        }
+
+        public void agregarTurno(Turno turnoActual)
+        {
+            var p = new Periodo(turnoActual);
+            Periodos.Add(p);
         }
     }
     

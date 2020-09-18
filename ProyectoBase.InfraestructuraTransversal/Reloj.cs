@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoBase.InfraestructuraTransversal.IoC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace ProyectoBase.InfraestructuraTransversal
     public static class Reloj
     {
         public static EventHandler<bool> RelojCambiaHora;
+        
 
         public static void OnRelojCambia(bool cambiaHora)
         {
@@ -24,6 +26,6 @@ namespace ProyectoBase.InfraestructuraTransversal
             }
         }
 
-
+        
     }
 }

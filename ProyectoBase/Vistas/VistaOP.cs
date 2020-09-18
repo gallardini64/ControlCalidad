@@ -24,7 +24,7 @@ namespace ProyectoBase
             CargarDefectos();
             Presentador.GenerarOtraVista();
             cbPie.DataSource = Enum.GetValues(typeof(Pie));
-
+            tbFec.Text = DateTime.Now.ToString();
         }
 
         private void CargarDefectos()
@@ -80,6 +80,35 @@ namespace ProyectoBase
                 contador--;
                 rowselected[0].Cells[2].Value = contador;
             }
+        }
+
+        private void VistaOP_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUp(sender, e);
+        }
+
+        private void VistaOP_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(sender, e);
+        }
+
+        private void VistaOP_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove(sender, e);
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Dispose();
+            }
+            catch (Exception)
+            {
+
+               
+            }
+            
         }
     }
 }

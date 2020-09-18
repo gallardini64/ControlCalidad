@@ -1,6 +1,7 @@
 ﻿using ProyectoBase.Dominio;
 using ProyectoBase.Interfaces;
 using ProyectoBase.Presentadores;
+using ProyectoBase.Vistas.ControlesDeUsuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,16 +20,24 @@ namespace ProyectoBase.Vistas
         public VistaSupervisorLinea()
         {
             InitializeComponent();
+            crearOPVista1.Visible = false;
+            crearOPVista1.setVista(this);
         }
 
         public void setPresentador(PresentadorOP presentador)
         {
             _presentador = presentador;
+            
         }
 
         public void Cerrar()
         {
             throw new NotImplementedException();
+        }
+
+        internal void confirmarNuevaOrden(DateTime fecha, Dominio.Color color, Modelo modelo)
+        {
+            _presentador.confirmarNuevaOrden(fecha, color, modelo);
         }
 
         public void MostrarMensaje(string mensaje, bool esError = false)
@@ -45,5 +54,22 @@ namespace ProyectoBase.Vistas
         {
             Show();
         }
+
+        private void btCrear_Click(object sender, EventArgs e)
+        {
+            var modelos = _presentador.getModelos();
+            var colores = _presentador.getColores();
+
+            crearOPVista1.cargarModelosYColor(modelos, colores);
+            crearOPVista1.Show();
+            _presentador.crearNuevaOrden();
+        }
+
+        private void btpausar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

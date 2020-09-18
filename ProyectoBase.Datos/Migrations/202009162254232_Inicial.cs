@@ -151,8 +151,8 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Inicio = c.DateTime(nullable: false),
-                        Fin = c.DateTime(nullable: false),
+                        Inicio = c.Time(nullable: false),
+                        Fin = c.Time(nullable: false),
                         Descripcion = c.String(),
                     })
                 .PrimaryKey(t => t.Id);

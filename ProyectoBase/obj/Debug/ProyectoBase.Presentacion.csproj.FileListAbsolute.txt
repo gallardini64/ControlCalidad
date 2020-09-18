@@ -140,3 +140,7 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\DB\Contro
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.Design.dll
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.dll
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroFramework.Fonts.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\MetroFramework.Design.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\MetroFramework.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\bin\Debug\MetroFramework.Fonts.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase\obj\Debug\ProyectoBase.Vistas.CrearOPVista.resources

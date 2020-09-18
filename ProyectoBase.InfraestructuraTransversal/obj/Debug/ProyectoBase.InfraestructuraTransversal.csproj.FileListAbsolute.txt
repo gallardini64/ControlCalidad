@@ -16,3 +16,9 @@ J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraT
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csprojAssemblyReference.cache
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
+D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
