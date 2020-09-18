@@ -60,12 +60,26 @@ namespace ProyectoBase.Presentadores
 
         }
 
-        internal void ActiveBotenesCalidad()
+        internal void ActivarControles()
         {
             Vista.ActivarControles(_op);
         }
 
-        internal void confirmarNuevaOrden(int numero,LineaDeTrabajo linea,DateTime fecha, Color color, Modelo modelo)
+
+
+        internal void ReanudarOP()
+        {
+            _op.Estado = "Activa";
+            _repository.Modificar(_op);
+        }
+        #region CU2
+
+
+        internal void crearNuevaOrden()
+        {
+            _op = new OrdenDeProduccion();
+        }
+        internal void confirmarNuevaOrden(int numero, LineaDeTrabajo linea, DateTime fecha, Color color, Modelo modelo)
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
             Turno turnoActual = new Turno();
@@ -84,23 +98,11 @@ namespace ProyectoBase.Presentadores
             _op.agregarTurno(turnoActual);
             _repository.Agregar(_op);
         }
-
-        internal void ActualizarOP()
-        {
-            throw new NotImplementedException();
-        }
-
         internal List<EspecificacionDeDefecto> ObtenerEspecificacionesDefectos()
         {
             var especificacionesDefectos = _repositoryED.GetTodos();
             return especificacionesDefectos.ToList();
         }
-
-        internal void crearNuevaOrden()
-        {
-            _op = new OrdenDeProduccion();
-        }
-
         internal List<Modelo> getModelos()
         {
             return _repositoryModelo.GetTodos().ToList();
@@ -115,12 +117,18 @@ namespace ProyectoBase.Presentadores
             return _repositoryLineaDeTrabajo.GetTodos().ToList();
         }
 
-        public void setVistaSL(VistaSupervisorLinea vista)
-        {
-            _vistaSL = vista;
-            _vistaSL.setPresentador(this);
-            _vistaSL.Show();
-        }
+
+
+
+
+        #endregion
+
+
+
+
+
+
+
         #region EVENTOS CU6
         public void AgregarDefecto(int id, string pie)
         {
@@ -153,6 +161,11 @@ namespace ProyectoBase.Presentadores
         {
             _vistaSL.ListarDefectos(_op.Defectos);
         }
-
+        public void setVistaSL(VistaSupervisorLinea vista)
+        {
+            _vistaSL = vista;
+            _vistaSL.setPresentador(this);
+            _vistaSL.Show();
+        }
     }
 }

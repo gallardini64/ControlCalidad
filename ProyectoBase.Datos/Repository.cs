@@ -55,7 +55,7 @@ namespace ProyectoBase.Datos
         {
             if (item != null)
             {
-                _unitOfWork.SetModificado(item);
+                UnitOfWork.Confirmar();
             }
         }
 

@@ -48,7 +48,7 @@
             this.tbNumero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNumero.Location = new System.Drawing.Point(105, 39);
             this.tbNumero.Name = "tbNumero";
-            this.tbNumero.Size = new System.Drawing.Size(137, 27);
+            this.tbNumero.Size = new System.Drawing.Size(147, 27);
             this.tbNumero.TabIndex = 0;
             // 
             // bunifuCustomLabel1
@@ -67,7 +67,7 @@
             this.lbLinea.AutoSize = true;
             this.lbLinea.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.lbLinea.ForeColor = System.Drawing.Color.White;
-            this.lbLinea.Location = new System.Drawing.Point(320, 42);
+            this.lbLinea.Location = new System.Drawing.Point(289, 42);
             this.lbLinea.Name = "lbLinea";
             this.lbLinea.Size = new System.Drawing.Size(51, 21);
             this.lbLinea.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.dpFecha.ForeColor = System.Drawing.Color.White;
             this.dpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dpFecha.FormatCustom = "dd/MM/yyyy";
-            this.dpFecha.Location = new System.Drawing.Point(313, 231);
+            this.dpFecha.Location = new System.Drawing.Point(313, 214);
             this.dpFecha.Name = "dpFecha";
             this.dpFecha.Size = new System.Drawing.Size(184, 31);
             this.dpFecha.TabIndex = 3;
@@ -91,7 +91,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(48, 167);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(48, 159);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(51, 21);
             this.bunifuCustomLabel3.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.cbColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.cbColor.FormattingEnabled = true;
             this.cbColor.ItemHeight = 23;
-            this.cbColor.Location = new System.Drawing.Point(105, 163);
+            this.cbColor.Location = new System.Drawing.Point(105, 155);
             this.cbColor.Name = "cbColor";
             this.cbColor.Size = new System.Drawing.Size(392, 29);
             this.cbColor.TabIndex = 26;
@@ -213,7 +213,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(248, 236);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(248, 219);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(59, 21);
             this.bunifuCustomLabel5.TabIndex = 2;
@@ -225,9 +225,9 @@
             this.cbLinea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.cbLinea.FormattingEnabled = true;
             this.cbLinea.ItemHeight = 23;
-            this.cbLinea.Location = new System.Drawing.Point(377, 38);
+            this.cbLinea.Location = new System.Drawing.Point(346, 39);
             this.cbLinea.Name = "cbLinea";
-            this.cbLinea.Size = new System.Drawing.Size(120, 29);
+            this.cbLinea.Size = new System.Drawing.Size(151, 29);
             this.cbLinea.TabIndex = 25;
             this.cbLinea.UseSelectable = true;
             // 

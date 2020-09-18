@@ -38,8 +38,9 @@
             this.bindingSourceOP = new System.Windows.Forms.BindingSource(this.components);
             this.btpausar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btCrear = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
             this.btFinalizar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
+            this.btReanudar = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
@@ -54,9 +55,9 @@
             this.pieDataGridViewTextBoxColumn,
             this.horaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.defectoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 44);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(497, 201);
+            this.dataGridView1.Size = new System.Drawing.Size(497, 251);
             this.dataGridView1.TabIndex = 0;
             // 
             // especificacionDataGridViewTextBoxColumn
@@ -85,11 +86,13 @@
             // 
             this.numeroOP.AutoSize = true;
             this.numeroOP.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceOP, "Numero", true));
-            this.numeroOP.Location = new System.Drawing.Point(12, 22);
+            this.numeroOP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numeroOP.ForeColor = System.Drawing.Color.White;
+            this.numeroOP.Location = new System.Drawing.Point(30, 20);
             this.numeroOP.Name = "numeroOP";
-            this.numeroOP.Size = new System.Drawing.Size(66, 13);
+            this.numeroOP.Size = new System.Drawing.Size(72, 21);
             this.numeroOP.TabIndex = 1;
-            this.numeroOP.Text = "numero OP: ";
+            this.numeroOP.Text = "Nro OP: ";
             // 
             // bindingSourceOP
             // 
@@ -119,7 +122,7 @@
             this.btpausar.IconVisible = true;
             this.btpausar.IconZoom = 90D;
             this.btpausar.IsTab = false;
-            this.btpausar.Location = new System.Drawing.Point(292, 14);
+            this.btpausar.Location = new System.Drawing.Point(269, 303);
             this.btpausar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btpausar.Name = "btpausar";
             this.btpausar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
@@ -157,7 +160,7 @@
             this.btCrear.IconVisible = true;
             this.btCrear.IconZoom = 90D;
             this.btCrear.IsTab = false;
-            this.btCrear.Location = new System.Drawing.Point(138, 14);
+            this.btCrear.Location = new System.Drawing.Point(131, 303);
             this.btCrear.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btCrear.Name = "btCrear";
             this.btCrear.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
@@ -171,14 +174,6 @@
             this.btCrear.Textcolor = System.Drawing.Color.White;
             this.btCrear.TextFont = new System.Drawing.Font("Century Gothic", 12F);
             this.btCrear.Click += new System.EventHandler(this.btCrear_Click);
-            // 
-            // crearOPVista1
-            // 
-            this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
-            this.crearOPVista1.Location = new System.Drawing.Point(0, -1);
-            this.crearOPVista1.Name = "crearOPVista1";
-            this.crearOPVista1.Size = new System.Drawing.Size(580, 365);
-            this.crearOPVista1.TabIndex = 8;
             // 
             // btFinalizar
             // 
@@ -204,7 +199,7 @@
             this.btFinalizar.IconVisible = true;
             this.btFinalizar.IconZoom = 90D;
             this.btFinalizar.IsTab = false;
-            this.btFinalizar.Location = new System.Drawing.Point(440, 14);
+            this.btFinalizar.Location = new System.Drawing.Point(403, 303);
             this.btFinalizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btFinalizar.Name = "btFinalizar";
             this.btFinalizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
@@ -219,12 +214,62 @@
             this.btFinalizar.TextFont = new System.Drawing.Font("Century Gothic", 12F);
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
+            // crearOPVista1
+            // 
+            this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
+            this.crearOPVista1.Location = new System.Drawing.Point(2, 2);
+            this.crearOPVista1.Name = "crearOPVista1";
+            this.crearOPVista1.Size = new System.Drawing.Size(581, 360);
+            this.crearOPVista1.TabIndex = 10;
+            // 
+            // btReanudar
+            // 
+            this.btReanudar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btReanudar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btReanudar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btReanudar.BorderRadius = 0;
+            this.btReanudar.ButtonText = "Reanudar Op";
+            this.btReanudar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btReanudar.DisabledColor = System.Drawing.Color.Gray;
+            this.btReanudar.Enabled = false;
+            this.btReanudar.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btReanudar.ForeColor = System.Drawing.Color.White;
+            this.btReanudar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btReanudar.Iconimage = null;
+            this.btReanudar.Iconimage_right = null;
+            this.btReanudar.Iconimage_right_Selected = null;
+            this.btReanudar.Iconimage_Selected = null;
+            this.btReanudar.IconMarginLeft = 0;
+            this.btReanudar.IconMarginRight = 0;
+            this.btReanudar.IconRightVisible = true;
+            this.btReanudar.IconRightZoom = 0D;
+            this.btReanudar.IconVisible = true;
+            this.btReanudar.IconZoom = 90D;
+            this.btReanudar.IsTab = false;
+            this.btReanudar.Location = new System.Drawing.Point(269, 303);
+            this.btReanudar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btReanudar.Name = "btReanudar";
+            this.btReanudar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btReanudar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btReanudar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btReanudar.selected = false;
+            this.btReanudar.Size = new System.Drawing.Size(124, 32);
+            this.btReanudar.TabIndex = 6;
+            this.btReanudar.Text = "Reanudar Op";
+            this.btReanudar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btReanudar.Textcolor = System.Drawing.Color.White;
+            this.btReanudar.TextFont = new System.Drawing.Font("Century Gothic", 12F);
+            this.btReanudar.Visible = false;
+            this.btReanudar.Click += new System.EventHandler(this.btReanudar_Click);
+            // 
             // VistaSupervisorLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(578, 360);
             this.Controls.Add(this.crearOPVista1);
+            this.Controls.Add(this.btReanudar);
             this.Controls.Add(this.btpausar);
             this.Controls.Add(this.btCrear);
             this.Controls.Add(this.numeroOP);
@@ -252,7 +297,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
         private Bunifu.Framework.UI.BunifuFlatButton btpausar;
         private Bunifu.Framework.UI.BunifuFlatButton btCrear;
-        private CrearOPVista crearOPVista1;
         private Bunifu.Framework.UI.BunifuFlatButton btFinalizar;
+        private CrearOPVista crearOPVista1;
+        private Bunifu.Framework.UI.BunifuFlatButton btReanudar;
     }
 }

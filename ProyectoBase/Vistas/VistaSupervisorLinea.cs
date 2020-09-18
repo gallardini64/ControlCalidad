@@ -69,11 +69,13 @@ namespace ProyectoBase.Vistas
 
         private void btpausar_Click(object sender, EventArgs e)
         {
+            btpausar.Visible = false;
+            btReanudar.Visible = true;
             _presentador.PausarOP();
         }
         public void ActivarControles()
         {
-            _presentador.ActiveBotenesCalidad();
+            _presentador.ActivarControles();
             btCrear.Enabled = false;
             btpausar.Enabled = true;
             btFinalizar.Enabled = true;
@@ -81,7 +83,6 @@ namespace ProyectoBase.Vistas
 
         public void ActivarControles(OrdenDeProduccion op)
         {
-            throw new NotImplementedException();
         }
 
         private void btFinalizar_Click(object sender, EventArgs e)
@@ -92,6 +93,13 @@ namespace ProyectoBase.Vistas
         public void DesactivarControles()
         {
             throw new NotImplementedException();
+        }
+
+        private void btReanudar_Click(object sender, EventArgs e)
+        {
+            btpausar.Visible = true;
+            btReanudar.Visible = true;
+            _presentador.ReanudarOP();
         }
     }
 }

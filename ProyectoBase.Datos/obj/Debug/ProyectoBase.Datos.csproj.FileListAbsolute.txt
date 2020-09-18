@@ -74,3 +74,7 @@ J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio2.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio2.resources
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio.resources
+G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio2.resources
