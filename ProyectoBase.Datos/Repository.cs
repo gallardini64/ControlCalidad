@@ -39,6 +39,7 @@ namespace ProyectoBase.Datos
             if (item != null)
             {
                 GetSet().Add(item);
+                UnitOfWork.Confirmar();
             }
         }
 

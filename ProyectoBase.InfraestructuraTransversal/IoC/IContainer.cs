@@ -11,7 +11,7 @@ namespace ProyectoBase.InfraestructuraTransversal.IoC
     /// </summary>
     public interface IContainer
     {
-        TService Resolve<TService>();
         void RegisterType(Type type);
+        TService Resolve<TService>();
     }
 }

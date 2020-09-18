@@ -35,9 +35,10 @@ namespace ProyectoBase.Vistas
             throw new NotImplementedException();
         }
 
-        internal void confirmarNuevaOrden(DateTime fecha, Dominio.Color color, Modelo modelo)
+        internal void confirmarNuevaOrden(LineaDeTrabajo linea, DateTime fecha, Dominio.Color color, Modelo modelo)
         {
-            _presentador.confirmarNuevaOrden(fecha, color, modelo);
+            _presentador.confirmarNuevaOrden(linea, fecha, color, modelo);
+            crearOPVista1.Cerrar();
         }
 
         public void MostrarMensaje(string mensaje, bool esError = false)
@@ -59,8 +60,9 @@ namespace ProyectoBase.Vistas
         {
             var modelos = _presentador.getModelos();
             var colores = _presentador.getColores();
+            var lineasDeTrabajo = _presentador.getLineasDeTrabajo();
 
-            crearOPVista1.cargarModelosYColor(modelos, colores);
+            crearOPVista1.cargarModelosColoresYLineas(lineasDeTrabajo, modelos, colores);
             crearOPVista1.Show();
             _presentador.crearNuevaOrden();
         }
@@ -69,7 +71,5 @@ namespace ProyectoBase.Vistas
         {
 
         }
-
-
     }
 }

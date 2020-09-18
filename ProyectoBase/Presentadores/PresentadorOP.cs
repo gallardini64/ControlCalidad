@@ -24,23 +24,35 @@ namespace ProyectoBase.Presentadores
         private readonly IRepository<Modelo> _repositoryModelo;
         private readonly IRepository<Color> _repositoryColor;
         private readonly IRepository<Turno> _repositoryTurno;
+        private readonly IRepository<Empleado> _repositoryEmpleado;
+        private readonly IRepository<LineaDeTrabajo> _repositoryLineaDeTrabajo;
+        private Sesion _sesion;
 
         public PresentadorOP(IRepository<OrdenDeProduccion> repository, 
                              IRepository<EspecificacionDeDefecto> repositoryED,
                              IRepository<Modelo> repositorymodelo,
                              IRepository<Color> repositorycolor,
-                             IRepository<Turno> repositoryTurno)
+                             IRepository<Turno> repositoryTurno,
+                             IRepository<Empleado> repositoryEmpleado,
+                             IRepository<LineaDeTrabajo> repositoryLineaDeTrabajo)
         {
             _repositoryModelo = repositorymodelo;
             _repositoryTurno = repositoryTurno;
             _repositoryColor = repositorycolor;
             _repository = repository;
             _repositoryED = repositoryED;
+            _repositoryEmpleado = repositoryEmpleado;
+            _repositoryLineaDeTrabajo = repositoryLineaDeTrabajo;
             Reloj.RelojCambiaHora += guardarDatosHora;
 
         }
 
-        internal void confirmarNuevaOrden(DateTime fecha, Color color, Modelo modelo)
+        internal void AsignarSesionActual(Sesion sesion)
+        {
+            _sesion = sesion;
+        }
+
+        internal void confirmarNuevaOrden(LineaDeTrabajo linea,DateTime fecha, Color color, Modelo modelo)
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
             Turno turnoActual = new Turno();
@@ -51,10 +63,12 @@ namespace ProyectoBase.Presentadores
                     turnoActual = turno;
                 }
             }
-            _op.Modelo = modelo;
+            _op.LineaDeTrabajo = linea;
+            _op.Fecha = fecha;
             _op.Color = color;
+            _op.Modelo = modelo;
             _op.agregarTurno(turnoActual);
-            
+            _repository.Agregar(_op);
         }
 
         internal void ActualizarOP()
@@ -81,6 +95,10 @@ namespace ProyectoBase.Presentadores
         internal List<Color> getColores()
         {
             return _repositoryColor.GetTodos().ToList();
+        }
+        internal List<LineaDeTrabajo> getLineasDeTrabajo()
+        {
+            return _repositoryLineaDeTrabajo.GetTodos().ToList();
         }
 
         public void setVistaSL(VistaSupervisorLinea vista)

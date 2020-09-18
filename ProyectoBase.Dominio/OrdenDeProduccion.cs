@@ -22,6 +22,7 @@ namespace ProyectoBase.Dominio
         {
             Periodos = new List<Periodo>();
             Defectos = new List<Defecto>();
+            estado = Dominio.Estado.Activa;
         }
         public string Estado
         {

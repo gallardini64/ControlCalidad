@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaOP));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bindingSourceED = new System.Windows.Forms.BindingSource(this.components);
             this.cbPie = new MetroFramework.Controls.MetroComboBox();
             this.tbPeriodo = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.tbFec = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -47,21 +46,18 @@
             this.btSalir = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DataGridDefectos = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).BeginInit();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceED = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bindingSourceED
-            // 
-            this.bindingSourceED.DataSource = typeof(ProyectoBase.Dominio.EspecificacionDeDefecto);
             // 
             // cbPie
             // 
-            this.cbPie.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cbPie.BackColor = System.Drawing.Color.White;
             this.cbPie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.cbPie.FormattingEnabled = true;
             resources.ApplyResources(this.cbPie, "cbPie");
@@ -70,24 +66,28 @@
             // 
             // tbPeriodo
             // 
+            this.tbPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.tbPeriodo.BorderColor = System.Drawing.Color.SeaGreen;
             resources.ApplyResources(this.tbPeriodo, "tbPeriodo");
             this.tbPeriodo.Name = "tbPeriodo";
             // 
             // tbFec
             // 
+            this.tbFec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.tbFec.BorderColor = System.Drawing.Color.SeaGreen;
             resources.ApplyResources(this.tbFec, "tbFec");
             this.tbFec.Name = "tbFec";
             // 
             // tbOpNum
             // 
+            this.tbOpNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.tbOpNum.BorderColor = System.Drawing.Color.SeaGreen;
             resources.ApplyResources(this.tbOpNum, "tbOpNum");
             this.tbOpNum.Name = "tbOpNum";
             // 
             // tbTurno
             // 
+            this.tbTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.tbTurno.BorderColor = System.Drawing.Color.SeaGreen;
             resources.ApplyResources(this.tbTurno, "tbTurno");
             this.tbTurno.Name = "tbTurno";
@@ -125,7 +125,7 @@
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             resources.ApplyResources(this.bunifuFlatButton2, "bunifuFlatButton2");
             this.bunifuFlatButton2.BorderRadius = 0;
             this.bunifuFlatButton2.ButtonText = "-";
@@ -145,7 +145,7 @@
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
@@ -157,7 +157,7 @@
             // btSalir
             // 
             this.btSalir.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             resources.ApplyResources(this.btSalir, "btSalir");
             this.btSalir.BorderRadius = 0;
             this.btSalir.ButtonText = "";
@@ -177,7 +177,7 @@
             this.btSalir.IconZoom = 90D;
             this.btSalir.IsTab = false;
             this.btSalir.Name = "btSalir";
-            this.btSalir.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btSalir.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             this.btSalir.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btSalir.OnHoverTextColor = System.Drawing.Color.White;
             this.btSalir.selected = false;
@@ -189,7 +189,7 @@
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "+";
@@ -209,7 +209,7 @@
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
@@ -229,7 +229,7 @@
             this.DataGridDefectos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridDefectos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -245,13 +245,26 @@
             this.DataGridDefectos.DataSource = this.bindingSourceED;
             this.DataGridDefectos.DoubleBuffered = true;
             this.DataGridDefectos.EnableHeadersVisualStyles = false;
-            this.DataGridDefectos.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.DataGridDefectos.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
             this.DataGridDefectos.HeaderForeColor = System.Drawing.Color.Honeydew;
             resources.ApplyResources(this.DataGridDefectos, "DataGridDefectos");
             this.DataGridDefectos.Name = "DataGridDefectos";
             this.DataGridDefectos.ReadOnly = true;
             this.DataGridDefectos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridDefectos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // Contador
+            // 
+            resources.ApplyResources(this.Contador, "Contador");
+            this.Contador.Name = "Contador";
+            this.Contador.ReadOnly = true;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            resources.ApplyResources(this.Id, "Id");
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -267,24 +280,15 @@
             this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
             this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Contador
+            // bindingSourceED
             // 
-            resources.ApplyResources(this.Contador, "Contador");
-            this.Contador.Name = "Contador";
-            this.Contador.ReadOnly = true;
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            resources.ApplyResources(this.Id, "Id");
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
+            this.bindingSourceED.DataSource = typeof(ProyectoBase.Dominio.EspecificacionDeDefecto);
             // 
             // VistaOP
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             this.Controls.Add(this.cbPie);
             this.Controls.Add(this.tbPeriodo);
             this.Controls.Add(this.tbFec);
@@ -299,14 +303,14 @@
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.DataGridDefectos);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaOP";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

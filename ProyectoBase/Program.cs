@@ -25,7 +25,7 @@ namespace ProyectoBase
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>());
+                Application.Run(IoCFactory.Instance.CurrentContainer.Resolve<VistaInicio>()); //Hay una vista que no está instanciada. Hacer breackpoint
             }
             catch (NullReferenceException)
             {

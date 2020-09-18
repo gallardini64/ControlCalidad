@@ -31,7 +31,9 @@ namespace ProyectoBase.Presentadores
             // CONVERTIR EN CLASE ESTRATEGIA?
             if (sesion.Usuario.Rol.Id == 1)
             {
-                VistaOP vistaOP = IoCFactory.Instance.CurrentContainer.Resolve<VistaOP>();
+                PresentadorOP presentador = IoCFactory.Instance.CurrentContainer.Resolve<PresentadorOP>();
+                presentador.AsignarSesionActual(sesion);
+                VistaOP vistaOP = new VistaOP(presentador);
                 vistaOP.Desplegar();
             }
 

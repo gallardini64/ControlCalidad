@@ -30,26 +30,32 @@ namespace ProyectoBase.Vistas
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            limpiarCampos();
+            LimpiarCampos();
         }
 
-        private void btCrear_Click(object sender, EventArgs e)
+        private void btConfirmar_Click(object sender, EventArgs e)
         {
-            _vista.confirmarNuevaOrden(bunifuDatepicker1.Value,
+            _vista.confirmarNuevaOrden((LineaDeTrabajo) cbLinea.SelectedValue,dpFecha.Value,
                                         (Dominio.Color)cbColor.SelectedItem,
                                         (Modelo)cbModelo.SelectedItem);
         }
 
-        internal void cargarModelosYColor(List<Modelo> modelos, List<Dominio.Color> colores)
+        internal void cargarModelosColoresYLineas(List<LineaDeTrabajo> lineas,List<Modelo> modelos, List<Dominio.Color> colores)
         {
             cbColor.DataSource = colores;
             cbModelo.DataSource = modelos;
+            cbLinea.DataSource = lineas;
         }
 
-        public void limpiarCampos()
+        public void LimpiarCampos()
         {
             tbNumero.Clear();
-            bunifuDatepicker1.Value = DateTime.Now;
+            dpFecha.Value = DateTime.Now;
+        }
+        public void Cerrar()
+        {
+            LimpiarCampos();
+            this.Hide();
         }
     }
 }

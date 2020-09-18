@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numeroOP = new System.Windows.Forms.Label();
-            this.btpausar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btCrear = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bindingSourceOP = new System.Windows.Forms.BindingSource(this.components);
             this.especificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.defectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.numeroOP = new System.Windows.Forms.Label();
+            this.bindingSourceOP = new System.Windows.Forms.BindingSource(this.components);
+            this.btpausar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btCrear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,8 +55,30 @@
             this.dataGridView1.DataSource = this.defectoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 82);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(431, 151);
+            this.dataGridView1.Size = new System.Drawing.Size(497, 201);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // especificacionDataGridViewTextBoxColumn
+            // 
+            this.especificacionDataGridViewTextBoxColumn.DataPropertyName = "especificacion";
+            this.especificacionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.especificacionDataGridViewTextBoxColumn.Name = "especificacionDataGridViewTextBoxColumn";
+            // 
+            // pieDataGridViewTextBoxColumn
+            // 
+            this.pieDataGridViewTextBoxColumn.DataPropertyName = "Pie";
+            this.pieDataGridViewTextBoxColumn.HeaderText = "Pie";
+            this.pieDataGridViewTextBoxColumn.Name = "pieDataGridViewTextBoxColumn";
+            // 
+            // horaDataGridViewTextBoxColumn
+            // 
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "hora";
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            // 
+            // defectoBindingSource
+            // 
+            this.defectoBindingSource.DataSource = typeof(ProyectoBase.Dominio.Defecto);
             // 
             // numeroOP
             // 
@@ -67,6 +89,10 @@
             this.numeroOP.Size = new System.Drawing.Size(66, 13);
             this.numeroOP.TabIndex = 1;
             this.numeroOP.Text = "numero OP: ";
+            // 
+            // bindingSourceOP
+            // 
+            this.bindingSourceOP.DataSource = typeof(ProyectoBase.Dominio.OrdenDeProduccion);
             // 
             // btpausar
             // 
@@ -145,45 +171,19 @@
             this.btCrear.TextFont = new System.Drawing.Font("Century Gothic", 12F);
             this.btCrear.Click += new System.EventHandler(this.btCrear_Click);
             // 
-            // bindingSourceOP
-            // 
-            this.bindingSourceOP.DataSource = typeof(ProyectoBase.Dominio.OrdenDeProduccion);
-            // 
-            // especificacionDataGridViewTextBoxColumn
-            // 
-            this.especificacionDataGridViewTextBoxColumn.DataPropertyName = "especificacion";
-            this.especificacionDataGridViewTextBoxColumn.HeaderText = "descripcion";
-            this.especificacionDataGridViewTextBoxColumn.Name = "especificacionDataGridViewTextBoxColumn";
-            // 
-            // pieDataGridViewTextBoxColumn
-            // 
-            this.pieDataGridViewTextBoxColumn.DataPropertyName = "Pie";
-            this.pieDataGridViewTextBoxColumn.HeaderText = "Pie";
-            this.pieDataGridViewTextBoxColumn.Name = "pieDataGridViewTextBoxColumn";
-            // 
-            // horaDataGridViewTextBoxColumn
-            // 
-            this.horaDataGridViewTextBoxColumn.DataPropertyName = "hora";
-            this.horaDataGridViewTextBoxColumn.HeaderText = "hora";
-            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
-            // 
-            // defectoBindingSource
-            // 
-            this.defectoBindingSource.DataSource = typeof(ProyectoBase.Dominio.Defecto);
-            // 
             // crearOPVista1
             // 
-            this.crearOPVista1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.crearOPVista1.Location = new System.Drawing.Point(176, 0);
+            this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
+            this.crearOPVista1.Location = new System.Drawing.Point(0, 0);
             this.crearOPVista1.Name = "crearOPVista1";
-            this.crearOPVista1.Size = new System.Drawing.Size(290, 258);
+            this.crearOPVista1.Size = new System.Drawing.Size(540, 360);
             this.crearOPVista1.TabIndex = 8;
             // 
             // VistaSupervisorLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 270);
+            this.ClientSize = new System.Drawing.Size(540, 360);
             this.Controls.Add(this.crearOPVista1);
             this.Controls.Add(this.btpausar);
             this.Controls.Add(this.btCrear);
@@ -193,8 +193,8 @@
             this.Name = "VistaSupervisorLinea";
             this.Text = "VistaSupervisorLinea";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
