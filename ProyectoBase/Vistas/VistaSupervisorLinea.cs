@@ -35,9 +35,9 @@ namespace ProyectoBase.Vistas
             throw new NotImplementedException();
         }
 
-        internal void confirmarNuevaOrden(LineaDeTrabajo linea, DateTime fecha, Dominio.Color color, Modelo modelo)
+        internal void confirmarNuevaOrden(int numero,LineaDeTrabajo linea, DateTime fecha, Dominio.Color color, Modelo modelo)
         {
-            _presentador.confirmarNuevaOrden(linea, fecha, color, modelo);
+            _presentador.confirmarNuevaOrden(numero,linea, fecha, color, modelo);
             crearOPVista1.Cerrar();
         }
 
@@ -69,7 +69,29 @@ namespace ProyectoBase.Vistas
 
         private void btpausar_Click(object sender, EventArgs e)
         {
+            _presentador.PausarOP();
+        }
+        public void ActivarControles()
+        {
+            _presentador.ActiveBotenesCalidad();
+            btCrear.Enabled = false;
+            btpausar.Enabled = true;
+            btFinalizar.Enabled = true;
+        }
 
+        public void ActivarControles(OrdenDeProduccion op)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btFinalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void DesactivarControles()
+        {
+            throw new NotImplementedException();
         }
     }
 }

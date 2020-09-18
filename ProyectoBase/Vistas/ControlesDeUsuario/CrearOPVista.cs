@@ -35,9 +35,11 @@ namespace ProyectoBase.Vistas
 
         private void btConfirmar_Click(object sender, EventArgs e)
         {
-            _vista.confirmarNuevaOrden((LineaDeTrabajo) cbLinea.SelectedValue,dpFecha.Value,
+            _vista.confirmarNuevaOrden(int.Parse(tbNumero.Text),
+                                        (LineaDeTrabajo) cbLinea.SelectedValue,dpFecha.Value,
                                         (Dominio.Color)cbColor.SelectedItem,
                                         (Modelo)cbModelo.SelectedItem);
+            _vista.ActivarControles();
         }
 
         internal void cargarModelosColoresYLineas(List<LineaDeTrabajo> lineas,List<Modelo> modelos, List<Dominio.Color> colores)

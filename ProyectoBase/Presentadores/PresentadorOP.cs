@@ -18,7 +18,7 @@ namespace ProyectoBase.Presentadores
     public class PresentadorOP : PresentadorBase<IVistaOP>
     {
         private VistaSupervisorLinea _vistaSL;
-        private OrdenDeProduccion _op = new OrdenDeProduccion();
+        private OrdenDeProduccion _op;
         private readonly IRepository<OrdenDeProduccion> _repository;
         private readonly IRepository<EspecificacionDeDefecto> _repositoryED;
         private readonly IRepository<Modelo> _repositoryModelo;
@@ -52,17 +52,31 @@ namespace ProyectoBase.Presentadores
             _sesion = sesion;
         }
 
-        internal void confirmarNuevaOrden(LineaDeTrabajo linea,DateTime fecha, Color color, Modelo modelo)
+        internal void PausarOP()
+        {
+            _op.Estado = "Pausada";
+            Vista.DesactivarControles();
+            _repository.Modificar(_op);
+
+        }
+
+        internal void ActiveBotenesCalidad()
+        {
+            Vista.ActivarControles(_op);
+        }
+
+        internal void confirmarNuevaOrden(int numero,LineaDeTrabajo linea,DateTime fecha, Color color, Modelo modelo)
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
             Turno turnoActual = new Turno();
             foreach (var turno in turnos)
             {
-                if (turno.Inicio.Hour >= DateTime.Now.Hour && turno.Fin.Hour <= DateTime.Now.Hour)
+                if (DateTime.Now.Hour >= turno.Inicio.Hour && DateTime.Now.Hour <= turno.Fin.Hour)
                 {
                     turnoActual = turno;
                 }
             }
+            _op.Numero = numero;
             _op.LineaDeTrabajo = linea;
             _op.Fecha = fecha;
             _op.Color = color;

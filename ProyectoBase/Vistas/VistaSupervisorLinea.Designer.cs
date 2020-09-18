@@ -39,6 +39,7 @@
             this.btpausar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btCrear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
+            this.btFinalizar = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
@@ -174,21 +175,61 @@
             // crearOPVista1
             // 
             this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
-            this.crearOPVista1.Location = new System.Drawing.Point(0, 0);
+            this.crearOPVista1.Location = new System.Drawing.Point(0, -1);
             this.crearOPVista1.Name = "crearOPVista1";
-            this.crearOPVista1.Size = new System.Drawing.Size(540, 360);
+            this.crearOPVista1.Size = new System.Drawing.Size(580, 365);
             this.crearOPVista1.TabIndex = 8;
+            // 
+            // btFinalizar
+            // 
+            this.btFinalizar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btFinalizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btFinalizar.BorderRadius = 0;
+            this.btFinalizar.ButtonText = "Finalizar Op";
+            this.btFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btFinalizar.DisabledColor = System.Drawing.Color.Gray;
+            this.btFinalizar.Enabled = false;
+            this.btFinalizar.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btFinalizar.ForeColor = System.Drawing.Color.White;
+            this.btFinalizar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btFinalizar.Iconimage = null;
+            this.btFinalizar.Iconimage_right = null;
+            this.btFinalizar.Iconimage_right_Selected = null;
+            this.btFinalizar.Iconimage_Selected = null;
+            this.btFinalizar.IconMarginLeft = 0;
+            this.btFinalizar.IconMarginRight = 0;
+            this.btFinalizar.IconRightVisible = true;
+            this.btFinalizar.IconRightZoom = 0D;
+            this.btFinalizar.IconVisible = true;
+            this.btFinalizar.IconZoom = 90D;
+            this.btFinalizar.IsTab = false;
+            this.btFinalizar.Location = new System.Drawing.Point(440, 14);
+            this.btFinalizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btFinalizar.Name = "btFinalizar";
+            this.btFinalizar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btFinalizar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btFinalizar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btFinalizar.selected = false;
+            this.btFinalizar.Size = new System.Drawing.Size(124, 32);
+            this.btFinalizar.TabIndex = 9;
+            this.btFinalizar.Text = "Finalizar Op";
+            this.btFinalizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btFinalizar.Textcolor = System.Drawing.Color.White;
+            this.btFinalizar.TextFont = new System.Drawing.Font("Century Gothic", 12F);
+            this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
             // VistaSupervisorLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 360);
+            this.ClientSize = new System.Drawing.Size(578, 360);
             this.Controls.Add(this.crearOPVista1);
             this.Controls.Add(this.btpausar);
             this.Controls.Add(this.btCrear);
             this.Controls.Add(this.numeroOP);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btFinalizar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaSupervisorLinea";
             this.Text = "VistaSupervisorLinea";
@@ -212,5 +253,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btpausar;
         private Bunifu.Framework.UI.BunifuFlatButton btCrear;
         private CrearOPVista crearOPVista1;
+        private Bunifu.Framework.UI.BunifuFlatButton btFinalizar;
     }
 }

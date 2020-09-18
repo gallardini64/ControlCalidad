@@ -24,7 +24,9 @@ namespace ProyectoBase
             CargarDefectos();
             Presentador.GenerarOtraVista();
             cbPie.DataSource = Enum.GetValues(typeof(Pie));
-            tbFec.Text = DateTime.Now.ToString();
+            btAgregar.Enabled = false;
+            btQuitar.Enabled = false;
+            btParPrimera.Enabled = false;
         }
 
         private void CargarDefectos()
@@ -101,7 +103,7 @@ namespace ProyectoBase
         {
             try
             {
-                this.Dispose();
+                Cerrar();
             }
             catch (Exception)
             {
@@ -109,6 +111,23 @@ namespace ProyectoBase
                
             }
             
+        }
+
+        public void ActivarControles(OrdenDeProduccion op)
+        {
+            btAgregar.Enabled = true;
+            btQuitar.Enabled = true;
+            btParPrimera.Enabled = true;
+            tbOpNum.Text = op.Numero.ToString();
+            tbFec.Text = op.Fecha.ToString();
+            tbTurno.Text = op.Periodos.LastOrDefault().Turno.ToString();
+        }
+
+        public void DesactivarControles()
+        {
+            btAgregar.Enabled = false;
+            btQuitar.Enabled = false;
+            btHermanado.Enabled = true;
         }
     }
 }
