@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaOP));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.bindingSourceED = new System.Windows.Forms.BindingSource(this.components);
+            this.hermanadoVista1 = new ProyectoBase.Vistas.ControlesDeUsuario.HermanadoVista();
+            this.btParPrimera = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cbPie = new MetroFramework.Controls.MetroComboBox();
             this.tbFec = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.tbOpNum = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -48,12 +51,51 @@
             this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSourceED = new System.Windows.Forms.BindingSource(this.components);
             this.btHermanado = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btParPrimera = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bindingSourceED
+            // 
+            this.bindingSourceED.DataSource = typeof(ProyectoBase.Dominio.EspecificacionDeDefecto);
+            // 
+            // hermanadoVista1
+            // 
+            this.hermanadoVista1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            resources.ApplyResources(this.hermanadoVista1, "hermanadoVista1");
+            this.hermanadoVista1.Name = "hermanadoVista1";
+            // 
+            // btParPrimera
+            // 
+            this.btParPrimera.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btParPrimera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            resources.ApplyResources(this.btParPrimera, "btParPrimera");
+            this.btParPrimera.BorderRadius = 0;
+            this.btParPrimera.ButtonText = "Par a Primera";
+            this.btParPrimera.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btParPrimera.DisabledColor = System.Drawing.Color.Gray;
+            this.btParPrimera.Iconcolor = System.Drawing.Color.Transparent;
+            this.btParPrimera.Iconimage = ((System.Drawing.Image)(resources.GetObject("btParPrimera.Iconimage")));
+            this.btParPrimera.Iconimage_right = null;
+            this.btParPrimera.Iconimage_right_Selected = null;
+            this.btParPrimera.Iconimage_Selected = null;
+            this.btParPrimera.IconMarginLeft = 0;
+            this.btParPrimera.IconMarginRight = 0;
+            this.btParPrimera.IconRightVisible = true;
+            this.btParPrimera.IconRightZoom = 0D;
+            this.btParPrimera.IconVisible = true;
+            this.btParPrimera.IconZoom = 90D;
+            this.btParPrimera.IsTab = false;
+            this.btParPrimera.Name = "btParPrimera";
+            this.btParPrimera.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            this.btParPrimera.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btParPrimera.OnHoverTextColor = System.Drawing.Color.White;
+            this.btParPrimera.selected = false;
+            this.btParPrimera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btParPrimera.Textcolor = System.Drawing.Color.White;
+            this.btParPrimera.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btParPrimera.Click += new System.EventHandler(this.btParPrimera_Click);
             // 
             // cbPie
             // 
@@ -209,20 +251,20 @@
             // 
             this.DataGridDefectos.AllowUserToAddRows = false;
             this.DataGridDefectos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridDefectos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridDefectos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridDefectos.AutoGenerateColumns = false;
             this.DataGridDefectos.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DataGridDefectos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridDefectos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridDefectos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridDefectos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridDefectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridDefectos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.descripcionDataGridViewTextBoxColumn,
@@ -267,10 +309,6 @@
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
             // 
-            // bindingSourceED
-            // 
-            this.bindingSourceED.DataSource = typeof(ProyectoBase.Dominio.EspecificacionDeDefecto);
-            // 
             // btHermanado
             // 
             this.btHermanado.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -300,42 +338,14 @@
             this.btHermanado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btHermanado.Textcolor = System.Drawing.Color.White;
             this.btHermanado.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btParPrimera
-            // 
-            this.btParPrimera.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btParPrimera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
-            resources.ApplyResources(this.btParPrimera, "btParPrimera");
-            this.btParPrimera.BorderRadius = 0;
-            this.btParPrimera.ButtonText = "Par a Primera";
-            this.btParPrimera.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btParPrimera.DisabledColor = System.Drawing.Color.Gray;
-            this.btParPrimera.Iconcolor = System.Drawing.Color.Transparent;
-            this.btParPrimera.Iconimage = ((System.Drawing.Image)(resources.GetObject("btParPrimera.Iconimage")));
-            this.btParPrimera.Iconimage_right = null;
-            this.btParPrimera.Iconimage_right_Selected = null;
-            this.btParPrimera.Iconimage_Selected = null;
-            this.btParPrimera.IconMarginLeft = 0;
-            this.btParPrimera.IconMarginRight = 0;
-            this.btParPrimera.IconRightVisible = true;
-            this.btParPrimera.IconRightZoom = 0D;
-            this.btParPrimera.IconVisible = true;
-            this.btParPrimera.IconZoom = 90D;
-            this.btParPrimera.IsTab = false;
-            this.btParPrimera.Name = "btParPrimera";
-            this.btParPrimera.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
-            this.btParPrimera.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btParPrimera.OnHoverTextColor = System.Drawing.Color.White;
-            this.btParPrimera.selected = false;
-            this.btParPrimera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btParPrimera.Textcolor = System.Drawing.Color.White;
-            this.btParPrimera.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHermanado.Click += new System.EventHandler(this.btHermanado_Click);
             // 
             // VistaOP
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
+            this.Controls.Add(this.hermanadoVista1);
             this.Controls.Add(this.btParPrimera);
             this.Controls.Add(this.btHermanado);
             this.Controls.Add(this.cbPie);
@@ -356,8 +366,8 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.VistaOP_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDefectos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,6 +393,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private Bunifu.Framework.UI.BunifuFlatButton btHermanado;
         private Bunifu.Framework.UI.BunifuFlatButton btParPrimera;
+        private Vistas.ControlesDeUsuario.HermanadoVista hermanadoVista1;
     }
 }
 

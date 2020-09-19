@@ -27,6 +27,7 @@ namespace ProyectoBase
             btAgregar.Enabled = false;
             btQuitar.Enabled = false;
             btParPrimera.Enabled = false;
+            hermanadoVista1.setVista(this);
         }
 
         private void CargarDefectos()
@@ -38,6 +39,16 @@ namespace ProyectoBase
                 item.Cells[2].Value = 0;
             }
             
+        }
+
+        internal void QuitarPar(string calidad)
+        {
+            Presentador.quitarPar(calidad);
+        }
+
+        internal void agregarPar(string calidad)
+        {
+            Presentador.AgregarPar(calidad);
         }
 
         public void Desplegar()
@@ -52,12 +63,14 @@ namespace ProyectoBase
             Presentador.AgregarDefecto(id, pie);
             agregarDefectoATabla();
         }
+
         private void quitar_Click(object sender, EventArgs e)
         {
             int id = (int)DataGridDefectos.SelectedRows[0].Cells[3].Value;
             Presentador.QuitarDefecto(id);
             quitarDefectoDeTabla();
         }
+
         private void agregarDefectoATabla()
         {
             var rowselected = DataGridDefectos.SelectedRows;
@@ -69,6 +82,12 @@ namespace ProyectoBase
             contador++;
             rowselected[0].Cells[2].Value = contador;
         }
+
+        internal void FinalizarHermanado()
+        {
+            hermanadoVista1.Visible = false;
+        }
+
         private void quitarDefectoDeTabla()
         {
             var rowselected = DataGridDefectos.SelectedRows;
@@ -128,6 +147,26 @@ namespace ProyectoBase
             btAgregar.Enabled = false;
             btQuitar.Enabled = false;
             btHermanado.Enabled = true;
+        }
+
+        private void btParPrimera_Click(object sender, EventArgs e)
+        {
+            agregarParPrimera();
+        }
+       
+        public void agregarParPrimera()
+        {
+            Presentador.ParAPRimera();
+        }
+
+        private void btHermanado_Click(object sender, EventArgs e)
+        {
+            hermanadoVista1.Visible = true;
+        }
+
+        public void CargarOrden()
+        {
+            
         }
     }
 }

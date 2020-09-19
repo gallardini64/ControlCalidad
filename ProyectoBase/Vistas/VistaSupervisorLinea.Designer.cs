@@ -39,8 +39,8 @@
             this.btpausar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btCrear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btFinalizar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
             this.btReanudar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.crearOPVista1 = new ProyectoBase.Vistas.CrearOPVista();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).BeginInit();
@@ -214,14 +214,6 @@
             this.btFinalizar.TextFont = new System.Drawing.Font("Century Gothic", 12F);
             this.btFinalizar.Click += new System.EventHandler(this.btFinalizar_Click);
             // 
-            // crearOPVista1
-            // 
-            this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
-            this.crearOPVista1.Location = new System.Drawing.Point(2, 2);
-            this.crearOPVista1.Name = "crearOPVista1";
-            this.crearOPVista1.Size = new System.Drawing.Size(581, 360);
-            this.crearOPVista1.TabIndex = 10;
-            // 
             // btReanudar
             // 
             this.btReanudar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
@@ -262,6 +254,14 @@
             this.btReanudar.Visible = false;
             this.btReanudar.Click += new System.EventHandler(this.btReanudar_Click);
             // 
+            // crearOPVista1
+            // 
+            this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
+            this.crearOPVista1.Location = new System.Drawing.Point(-1, 0);
+            this.crearOPVista1.Name = "crearOPVista1";
+            this.crearOPVista1.Size = new System.Drawing.Size(581, 360);
+            this.crearOPVista1.TabIndex = 10;
+            // 
             // VistaSupervisorLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +278,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaSupervisorLinea";
             this.Text = "VistaSupervisorLinea";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.VistaSupervisorLinea_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.VistaSupervisorLinea_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.VistaSupervisorLinea_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defectoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceOP)).EndInit();

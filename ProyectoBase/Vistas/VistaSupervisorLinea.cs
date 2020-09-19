@@ -17,6 +17,9 @@ namespace ProyectoBase.Vistas
     public partial class VistaSupervisorLinea : Form, IVistaOP
     {
         private PresentadorOP _presentador;
+        protected int mov;
+        protected int movX;
+        protected int movY;
         public VistaSupervisorLinea()
         {
             InitializeComponent();
@@ -72,6 +75,8 @@ namespace ProyectoBase.Vistas
             btpausar.Visible = false;
             btReanudar.Visible = true;
             _presentador.PausarOP();
+            btReanudar.Enabled = true;
+            btFinalizar.Enabled = false;
         }
         public void ActivarControles()
         {
@@ -87,19 +92,72 @@ namespace ProyectoBase.Vistas
 
         private void btFinalizar_Click(object sender, EventArgs e)
         {
+            DialogResult resultado = MessageBox.Show("Finalizar OP", "¿desea finalizar la orden de producción?", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                if (resultado == DialogResult.OK)
+            {
+                _presentador.FinalizarOP();
+                LimpiarTabla();
+            }
+            
+        }
 
+        private void LimpiarTabla()
+        {
+           
         }
 
         public void DesactivarControles()
         {
-            throw new NotImplementedException();
+           
         }
 
         private void btReanudar_Click(object sender, EventArgs e)
         {
             btpausar.Visible = true;
-            btReanudar.Visible = true;
+            btReanudar.Visible = false;
+            btFinalizar.Enabled = true;
             _presentador.ReanudarOP();
+        }
+        #region movimiento
+        private void VistaSupervisorLinea_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUp(sender, e);
+        }
+        private void VistaSupervisorLinea_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(sender, e);
+        }
+        
+        protected void mouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+        protected void mouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+        protected void mouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
+        }
+
+        private void VistaSupervisorLinea_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove(sender, e);
+        }
+
+
+        #endregion
+        public void CargarOrden()
+        {
+            btCrear.Enabled = false;
+            btpausar.Enabled = true;
+            btFinalizar.Enabled = true;
         }
     }
 }

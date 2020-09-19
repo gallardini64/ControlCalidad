@@ -44,7 +44,29 @@ namespace ProyectoBase.Presentadores
             _repositoryEmpleado = repositoryEmpleado;
             _repositoryLineaDeTrabajo = repositoryLineaDeTrabajo;
             Reloj.RelojCambiaHora += guardarDatosHora;
+            CargarOPPausada();
+        }
 
+        private void CargarOPPausada()
+        {
+            var ordenes = _repository.GetTodos().ToList();
+            _op = ordenes.LastOrDefault(e => e.Estado == Dominio.Estado.Pausada.ToString());
+            if (_op != null)
+            {
+                Vista.ActivarControles(_op);
+                Vista.CargarOrden();
+            }
+            
+        }
+
+        internal void AgregarPar(string calidad)
+        {
+            _op.AgregarPar(calidad);
+        }
+
+        internal void quitarPar(string calidad)
+        {
+            _op.Pares.Remove(_op.Pares.LastOrDefault(e => e.Calidad == calidad));
         }
 
         internal void AsignarSesionActual(Sesion sesion)
@@ -65,20 +87,19 @@ namespace ProyectoBase.Presentadores
             Vista.ActivarControles(_op);
         }
 
-
-
         internal void ReanudarOP()
         {
             _op.Estado = "Activa";
             _repository.Modificar(_op);
+            Vista.ActivarControles(_op);
         }
         #region CU2
-
 
         internal void crearNuevaOrden()
         {
             _op = new OrdenDeProduccion();
         }
+       
         internal void confirmarNuevaOrden(int numero, LineaDeTrabajo linea, DateTime fecha, Color color, Modelo modelo)
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
@@ -98,20 +119,36 @@ namespace ProyectoBase.Presentadores
             _op.agregarTurno(turnoActual);
             _repository.Agregar(_op);
         }
+       
+        internal void FinalizarOP()
+        {
+            _op.Estado = "Finalizada";
+            _repository.Modificar(_op);
+            Vista.DesactivarControles();
+
+        }
+
         internal List<EspecificacionDeDefecto> ObtenerEspecificacionesDefectos()
         {
             var especificacionesDefectos = _repositoryED.GetTodos();
             return especificacionesDefectos.ToList();
         }
+        
         internal List<Modelo> getModelos()
         {
             return _repositoryModelo.GetTodos().ToList();
+        }
+
+        internal void ParAPRimera()
+        {
+            _op.AgregarPar(Dominio.Calidad.Primera.ToString());
         }
 
         internal List<Color> getColores()
         {
             return _repositoryColor.GetTodos().ToList();
         }
+       
         internal List<LineaDeTrabajo> getLineasDeTrabajo()
         {
             return _repositoryLineaDeTrabajo.GetTodos().ToList();

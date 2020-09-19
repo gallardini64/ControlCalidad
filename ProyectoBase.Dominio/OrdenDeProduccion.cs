@@ -23,6 +23,7 @@ namespace ProyectoBase.Dominio
             Periodos = new List<Periodo>();
             Defectos = new List<Defecto>();
             estado = Dominio.Estado.Activa;
+            Pares = new List<Par>();
         }
         public string Estado
         {
@@ -72,6 +73,12 @@ namespace ProyectoBase.Dominio
         {
             var p = new Periodo(turnoActual);
             Periodos.Add(p);
+        }
+
+        public void AgregarPar(string calidad)
+        {
+            Par par = new Par(DateTime.Now, calidad);
+            Pares.Add(par);
         }
     }
     
