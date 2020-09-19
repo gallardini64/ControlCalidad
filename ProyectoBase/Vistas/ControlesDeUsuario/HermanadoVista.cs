@@ -44,7 +44,6 @@ namespace ProyectoBase.Vistas.ControlesDeUsuario
             if (lbContadorPrimera.Text == "0")
             {
                 contadorPrimera = 0;
-
             }
             else
             {

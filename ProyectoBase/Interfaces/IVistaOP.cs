@@ -12,6 +12,6 @@ namespace ProyectoBase.Interfaces
         void Desplegar();
         void ActivarControles(OrdenDeProduccion op);
         void DesactivarControles();
-        void CargarOrden();
+        void CargarOrden(OrdenDeProduccion op);
     }
 }

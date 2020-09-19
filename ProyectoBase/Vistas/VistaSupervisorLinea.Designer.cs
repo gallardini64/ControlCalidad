@@ -251,13 +251,12 @@
             this.btReanudar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btReanudar.Textcolor = System.Drawing.Color.White;
             this.btReanudar.TextFont = new System.Drawing.Font("Century Gothic", 12F);
-            this.btReanudar.Visible = false;
             this.btReanudar.Click += new System.EventHandler(this.btReanudar_Click);
             // 
             // crearOPVista1
             // 
             this.crearOPVista1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
-            this.crearOPVista1.Location = new System.Drawing.Point(-1, 0);
+            this.crearOPVista1.Location = new System.Drawing.Point(-2, 3);
             this.crearOPVista1.Name = "crearOPVista1";
             this.crearOPVista1.Size = new System.Drawing.Size(581, 360);
             this.crearOPVista1.TabIndex = 10;

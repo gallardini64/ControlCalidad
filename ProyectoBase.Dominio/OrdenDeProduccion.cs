@@ -11,12 +11,13 @@ namespace ProyectoBase.Dominio
     {
         public int Numero { get; set; }
         public DateTime Fecha { get; set; }
-        public ICollection<Defecto> Defectos { get; set; }
-        public ICollection<Par> Pares { get; set; }
-        public ICollection<Periodo> Periodos { get; set; }
-        public Modelo Modelo { get; set; }
-        public Color Color { get; set; }
-        
+        public virtual ICollection<Defecto> Defectos { get; set; }
+        public virtual ICollection<Par> Pares { get; set; }
+        public virtual ICollection<Periodo> Periodos { get; set; }
+        public virtual Modelo Modelo { get; set; }
+        public virtual Color Color { get; set; }
+        public virtual LineaDeTrabajo LineaDeTrabajo { get; set; }
+
         private Estado estado;
         public OrdenDeProduccion()
         {
@@ -50,7 +51,7 @@ namespace ProyectoBase.Dominio
                 return estado.ToString();
             }
         }
-        public LineaDeTrabajo LineaDeTrabajo { get; set; }
+
 
         public void AgregarDefecto(EspecificacionDeDefecto especDe, string pie, DateTime now)
         {

@@ -73,10 +73,9 @@ namespace ProyectoBase.Vistas
         private void btpausar_Click(object sender, EventArgs e)
         {
             btpausar.Visible = false;
+            btFinalizar.Enabled = false;
             btReanudar.Visible = true;
             _presentador.PausarOP();
-            btReanudar.Enabled = true;
-            btFinalizar.Enabled = false;
         }
         public void ActivarControles()
         {
@@ -88,6 +87,7 @@ namespace ProyectoBase.Vistas
 
         public void ActivarControles(OrdenDeProduccion op)
         {
+            CargarOrden(op);
         }
 
         private void btFinalizar_Click(object sender, EventArgs e)
@@ -114,6 +114,7 @@ namespace ProyectoBase.Vistas
         private void btReanudar_Click(object sender, EventArgs e)
         {
             btpausar.Visible = true;
+            btpausar.Enabled = true;
             btReanudar.Visible = false;
             btFinalizar.Enabled = true;
             _presentador.ReanudarOP();
@@ -153,11 +154,13 @@ namespace ProyectoBase.Vistas
 
 
         #endregion
-        public void CargarOrden()
+        public void CargarOrden(OrdenDeProduccion op)
         {
             btCrear.Enabled = false;
-            btpausar.Enabled = true;
+            btpausar.Enabled = false;
+            btReanudar.Enabled = true;
             btFinalizar.Enabled = true;
+            ListarDefectos(op.Defectos);
         }
     }
 }

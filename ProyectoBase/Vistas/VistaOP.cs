@@ -23,6 +23,7 @@ namespace ProyectoBase
             Presentador.SetVista(this);
             CargarDefectos();
             Presentador.GenerarOtraVista();
+            Presentador.CargarOPPausada();
             cbPie.DataSource = Enum.GetValues(typeof(Pie));
             btAgregar.Enabled = false;
             btQuitar.Enabled = false;
@@ -103,20 +104,7 @@ namespace ProyectoBase
             }
         }
 
-        private void VistaOP_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseUp(sender, e);
-        }
-
-        private void VistaOP_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseDown(sender, e);
-        }
-
-        private void VistaOP_MouseMove(object sender, MouseEventArgs e)
-        {
-            mouseMove(sender, e);
-        }
+       
 
         private void btSalir_Click(object sender, EventArgs e)
         {
@@ -139,7 +127,7 @@ namespace ProyectoBase
             btParPrimera.Enabled = true;
             tbOpNum.Text = op.Numero.ToString();
             tbFec.Text = op.Fecha.ToString();
-            tbTurno.Text = op.Periodos.LastOrDefault().Turno.ToString();
+            tbTurno.Text = Presentador.ObtenerTurnoActual().ToString();
         }
 
         public void DesactivarControles()
@@ -156,7 +144,7 @@ namespace ProyectoBase
        
         public void agregarParPrimera()
         {
-            Presentador.ParAPRimera();
+            Presentador.AgregarPar("Primera");
         }
 
         private void btHermanado_Click(object sender, EventArgs e)
@@ -164,9 +152,30 @@ namespace ProyectoBase
             hermanadoVista1.Visible = true;
         }
 
-        public void CargarOrden()
+        public void CargarOrden(OrdenDeProduccion op)
         {
             
         }
+
+        #region Movimiento
+        private void VistaOP_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUp(sender, e);
+        }
+
+        private void VistaOP_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(sender, e);
+        }
+
+        private void VistaOP_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove(sender, e);
+        }
+        #endregion
+
+
+
+
     }
 }

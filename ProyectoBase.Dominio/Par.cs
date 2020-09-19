@@ -7,12 +7,15 @@ namespace ProyectoBase.Dominio
         public DateTime Hora { get; set; }
 
         private Calidad calidad;
-       
 
-        public Par(DateTime now, string calidad1)
+        public Par()
+        {
+
+        }
+        public Par(DateTime now, string calidad)
         {
             Hora = now;
-            Calidad = calidad1;
+            Calidad = calidad;
         }
 
         public String Calidad

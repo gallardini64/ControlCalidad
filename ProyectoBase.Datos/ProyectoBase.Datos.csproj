@@ -80,6 +80,14 @@
     <Compile Include="Migrations\202009180813300_Cambio2.designer.cs">
       <DependentUpon>202009180813300_Cambio2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009190452576_Cambio3.cs" />
+    <Compile Include="Migrations\202009190452576_Cambio3.designer.cs">
+      <DependentUpon>202009190452576_Cambio3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009190505578_Cambio4.cs" />
+    <Compile Include="Migrations\202009190505578_Cambio4.designer.cs">
+      <DependentUpon>202009190505578_Cambio4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -120,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009180813300_Cambio2.resx">
       <DependentUpon>202009180813300_Cambio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009190452576_Cambio3.resx">
+      <DependentUpon>202009190452576_Cambio3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009190505578_Cambio4.resx">
+      <DependentUpon>202009190505578_Cambio4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

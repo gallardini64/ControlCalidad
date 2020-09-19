@@ -197,63 +197,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 11);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.Size = new System.Drawing.Size(85, 16);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Realizar Hermanado";
+            this.label1.Text = "Hermanado";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 53);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(25, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(97, 21);
             this.label2.TabIndex = 25;
             this.label2.Text = "Par Primera";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 137);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(110, 21);
             this.label3.TabIndex = 26;
             this.label3.Text = "Par Segunda";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(285, 66);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(266, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(95, 21);
             this.label4.TabIndex = 27;
             this.label4.Text = "Contador: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(285, 137);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(266, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.Size = new System.Drawing.Size(95, 21);
             this.label5.TabIndex = 28;
             this.label5.Text = "Contador: ";
             // 
             // lbContadorPrimera
             // 
             this.lbContadorPrimera.AutoSize = true;
-            this.lbContadorPrimera.Location = new System.Drawing.Point(347, 66);
+            this.lbContadorPrimera.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContadorPrimera.ForeColor = System.Drawing.Color.White;
+            this.lbContadorPrimera.Location = new System.Drawing.Point(358, 67);
             this.lbContadorPrimera.Name = "lbContadorPrimera";
-            this.lbContadorPrimera.Size = new System.Drawing.Size(13, 13);
+            this.lbContadorPrimera.Size = new System.Drawing.Size(19, 21);
             this.lbContadorPrimera.TabIndex = 29;
             this.lbContadorPrimera.Text = "0";
             // 
             // lbContadorSegunda
             // 
             this.lbContadorSegunda.AutoSize = true;
-            this.lbContadorSegunda.Location = new System.Drawing.Point(347, 137);
+            this.lbContadorSegunda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContadorSegunda.ForeColor = System.Drawing.Color.White;
+            this.lbContadorSegunda.Location = new System.Drawing.Point(358, 138);
             this.lbContadorSegunda.Name = "lbContadorSegunda";
-            this.lbContadorSegunda.Size = new System.Drawing.Size(13, 13);
+            this.lbContadorSegunda.Size = new System.Drawing.Size(19, 21);
             this.lbContadorSegunda.TabIndex = 30;
             this.lbContadorSegunda.Text = "0";
             // 
@@ -280,7 +294,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(16, 200);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(39, 195);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(80)))), ((int)(((byte)(138)))));
@@ -299,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(61)))));
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.lbContadorSegunda);
             this.Controls.Add(this.lbContadorPrimera);
@@ -313,7 +327,7 @@
             this.Controls.Add(this.btQuitarPrimera);
             this.Controls.Add(this.btAgregarPrimera);
             this.Name = "HermanadoVista";
-            this.Size = new System.Drawing.Size(375, 262);
+            this.Size = new System.Drawing.Size(405, 262);
             this.ResumeLayout(false);
             this.PerformLayout();
 

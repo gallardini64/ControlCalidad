@@ -26,7 +26,8 @@ namespace ProyectoBase.Presentadores
         private readonly IRepository<Turno> _repositoryTurno;
         private readonly IRepository<Empleado> _repositoryEmpleado;
         private readonly IRepository<LineaDeTrabajo> _repositoryLineaDeTrabajo;
-        private Sesion _sesion;
+        private Sesion _sesionSupLinea;
+        private Sesion _sesionSupCalidad;
 
         public PresentadorOP(IRepository<OrdenDeProduccion> repository, 
                              IRepository<EspecificacionDeDefecto> repositoryED,
@@ -44,17 +45,18 @@ namespace ProyectoBase.Presentadores
             _repositoryEmpleado = repositoryEmpleado;
             _repositoryLineaDeTrabajo = repositoryLineaDeTrabajo;
             Reloj.RelojCambiaHora += guardarDatosHora;
-            CargarOPPausada();
+            
         }
 
-        private void CargarOPPausada()
+        public void CargarOPPausada()
         {
             var ordenes = _repository.GetTodos().ToList();
             _op = ordenes.LastOrDefault(e => e.Estado == Dominio.Estado.Pausada.ToString());
             if (_op != null)
             {
                 Vista.ActivarControles(_op);
-                Vista.CargarOrden();
+                Vista.CargarOrden(_op);
+                _vistaSL.CargarOrden(_op);
             }
             
         }
@@ -71,7 +73,7 @@ namespace ProyectoBase.Presentadores
 
         internal void AsignarSesionActual(Sesion sesion)
         {
-            _sesion = sesion;
+            _sesionSupLinea = sesion;
         }
 
         internal void PausarOP()
@@ -119,7 +121,21 @@ namespace ProyectoBase.Presentadores
             _op.agregarTurno(turnoActual);
             _repository.Agregar(_op);
         }
-       
+       public Turno ObtenerTurnoActual()
+        {
+            List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
+            Turno turnoActual = turnos.FirstOrDefault(t => DateTime.Now.Hour >= t.Inicio.Hour && DateTime.Now.Hour <= t.Fin.Hour);
+            return turnoActual;
+
+            //foreach (var turno in turnos)
+            //{
+            //    if (DateTime.Now.Hour >= turno.Inicio.Hour && DateTime.Now.Hour <= turno.Fin.Hour)
+            //    {
+            //        turnoActual = turno;
+            //    }
+            //}
+
+        }
         internal void FinalizarOP()
         {
             _op.Estado = "Finalizada";
@@ -139,7 +155,7 @@ namespace ProyectoBase.Presentadores
             return _repositoryModelo.GetTodos().ToList();
         }
 
-        internal void ParAPRimera()
+        internal void ParAPrimera()
         {
             _op.AgregarPar(Dominio.Calidad.Primera.ToString());
         }

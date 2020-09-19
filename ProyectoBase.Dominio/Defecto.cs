@@ -9,7 +9,10 @@ namespace ProyectoBase.Dominio
     public class Defecto : EntityBase
     {
         private Pie pie;
+        public Defecto()
+        {
 
+        }
         public Defecto(EspecificacionDeDefecto especDe, string text, DateTime now)
         {
             hora = now;
@@ -43,7 +46,7 @@ namespace ProyectoBase.Dominio
             }
         }
         public DateTime hora { get; set; }
-        public EspecificacionDeDefecto especificacion { get; set; }
+        public virtual EspecificacionDeDefecto especificacion { get; set; }
 
     }
 }
