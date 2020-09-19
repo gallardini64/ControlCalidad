@@ -75,6 +75,7 @@ namespace ProyectoBase.Vistas
             btpausar.Visible = false;
             btFinalizar.Enabled = false;
             btReanudar.Visible = true;
+            btReanudar.Enabled = true;
             _presentador.PausarOP();
         }
         public void ActivarControles()
@@ -82,6 +83,7 @@ namespace ProyectoBase.Vistas
             _presentador.ActivarControles();
             btCrear.Enabled = false;
             btpausar.Enabled = true;
+            btReanudar.Visible = false;
             btFinalizar.Enabled = true;
         }
 
@@ -97,13 +99,17 @@ namespace ProyectoBase.Vistas
             {
                 _presentador.FinalizarOP();
                 LimpiarTabla();
+                btFinalizar.Enabled = false;
+                btpausar.Enabled = false;
+                btCrear.Enabled = true;
+                _presentador.LimpiarCamposOP();
             }
             
         }
 
         private void LimpiarTabla()
         {
-           
+            dataGridView1.DataSource = null;
         }
 
         public void DesactivarControles()
@@ -159,8 +165,14 @@ namespace ProyectoBase.Vistas
             btCrear.Enabled = false;
             btpausar.Enabled = false;
             btReanudar.Enabled = true;
+            btReanudar.Visible = true;
             btFinalizar.Enabled = true;
             ListarDefectos(op.Defectos);
+        }
+
+        public void LimpiarCamposOP()
+        {
+            throw new NotImplementedException();
         }
     }
 }

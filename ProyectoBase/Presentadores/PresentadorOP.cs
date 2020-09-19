@@ -95,6 +95,11 @@ namespace ProyectoBase.Presentadores
             _repository.Modificar(_op);
             Vista.ActivarControles(_op);
         }
+
+        internal void LimpiarCamposOP()
+        {
+            Vista.LimpiarCamposOP();
+        }
         #region CU2
 
         internal void crearNuevaOrden()

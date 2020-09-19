@@ -172,8 +172,15 @@ namespace ProyectoBase
         {
             mouseMove(sender, e);
         }
-        #endregion
 
+
+        #endregion
+        public void LimpiarCamposOP()
+        {
+            tbFec.Text = "";
+            tbOpNum.Text = "";
+            tbTurno.Text = "";
+        }
 
 
 

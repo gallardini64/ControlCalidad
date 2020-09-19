@@ -13,5 +13,6 @@ namespace ProyectoBase.Interfaces
         void ActivarControles(OrdenDeProduccion op);
         void DesactivarControles();
         void CargarOrden(OrdenDeProduccion op);
+        void LimpiarCamposOP();
     }
 }

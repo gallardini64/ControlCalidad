@@ -24,6 +24,7 @@ namespace ProyectoBase.Presentadores
         {
             PresentadorAcceso presentadorAcceso = new PresentadorAcceso(OtorgarPermiso);
             VistaAcceso acceso = new VistaAcceso(presentadorAcceso);
+
             acceso.Desplegar();
         }
         public void OtorgarPermiso(object sender, Sesion sesion)
@@ -35,6 +36,8 @@ namespace ProyectoBase.Presentadores
                 presentador.AsignarSesionActual(sesion);
                 VistaOP vistaOP = new VistaOP(presentador);
                 vistaOP.Desplegar();
+                var vistaGeneral = IoCFactory.Instance.CurrentContainer.Resolve<VistaPantallaGeneral>();
+                vistaGeneral.Show();
             }
 
         }
