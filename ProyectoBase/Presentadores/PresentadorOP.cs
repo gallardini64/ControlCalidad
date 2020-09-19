@@ -17,6 +17,7 @@ namespace ProyectoBase.Presentadores
 {
     public class PresentadorOP : PresentadorBase<IVistaOP>
     {
+        public EventHandler<Defecto> agregaDefecto;
         private VistaSupervisorLinea _vistaSL;
         private OrdenDeProduccion _op;
         private readonly IRepository<OrdenDeProduccion> _repository;
@@ -181,19 +182,20 @@ namespace ProyectoBase.Presentadores
 
         #endregion
 
-
-
-
-
-
-
         #region EVENTOS CU6
         public void AgregarDefecto(int id, string pie)
         {
             var especDe = _repositoryED.Get(id);
             _op.AgregarDefecto(especDe, pie, DateTime.Now);
+            OnAgregaDefecto(_op.Defectos.LastOrDefault());
             ActualizarVistaDatos();
         }
+
+        private void OnAgregaDefecto(Defecto d)
+        {
+            agregaDefecto?.Invoke(this, d);
+        }
+
         private void guardarDatosHora(object sender,bool cambiaHora = true)
         {
             _op.ActualizarHorasOcupadas();

@@ -14,17 +14,17 @@ namespace ProyectoBase.Presentadores
 {
     public class PresentadorInicio : PresentadorBase<IVistaInicio>
     {
-        
-        public static VistaSupervisorLinea sup;
+        public VistaPantallaGeneral _vistaGeneral;
+        public PresentadorVistaGeneral _presentadorVistaGeneral;
         public PresentadorInicio()
         {
-            //EJEMPLO Reloj.RelojCambiaHora += OnCambioDeHora;
+            _presentadorVistaGeneral = IoCFactory.Instance.CurrentContainer.Resolve<PresentadorVistaGeneral>();
+            _vistaGeneral = new VistaPantallaGeneral(_presentadorVistaGeneral);
         }
         public void DesplegarVistaInicioDeSesion()
         {
             PresentadorAcceso presentadorAcceso = new PresentadorAcceso(OtorgarPermiso);
             VistaAcceso acceso = new VistaAcceso(presentadorAcceso);
-
             acceso.Desplegar();
         }
         public void OtorgarPermiso(object sender, Sesion sesion)
@@ -34,10 +34,10 @@ namespace ProyectoBase.Presentadores
             {
                 PresentadorOP presentador = IoCFactory.Instance.CurrentContainer.Resolve<PresentadorOP>();
                 presentador.AsignarSesionActual(sesion);
+                presentador.agregaDefecto += _presentadorVistaGeneral.ActualizarPantalla;
                 VistaOP vistaOP = new VistaOP(presentador);
                 vistaOP.Desplegar();
-                var vistaGeneral = IoCFactory.Instance.CurrentContainer.Resolve<VistaPantallaGeneral>();
-                vistaGeneral.Show();
+                _vistaGeneral.Show();
             }
 
         }

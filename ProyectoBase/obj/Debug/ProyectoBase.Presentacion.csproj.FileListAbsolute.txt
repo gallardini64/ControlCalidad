@@ -154,3 +154,4 @@ G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\bin\Debug\MetroF
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.HermanadoVista.resources
 G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.CrearOPVista.resources
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.HermanadoVista.resources
+J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaPantallaGeneral.resources

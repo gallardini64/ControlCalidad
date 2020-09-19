@@ -1,4 +1,5 @@
-﻿using ProyectoBase.Interfaces;
+﻿using ProyectoBase.Dominio;
+using ProyectoBase.Interfaces;
 using ProyectoBase.Presentadores;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,10 @@ namespace ProyectoBase.Vistas
             InitializeComponent();
             Presentador.SetVista(this);
         }
-        
+        public void AgregarDefecto(Defecto d)
+        {
+
+        }
 
 
 

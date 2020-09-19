@@ -13,7 +13,9 @@ namespace ProyectoBase.Presentadores
     {
         private IRepository<OrdenDeProduccion> _repository;
 
-
-
+        internal void ActualizarPantalla(object sender, Defecto d)
+        {
+            Vista.AgregarDefecto(d);
+        }
     }
 }
