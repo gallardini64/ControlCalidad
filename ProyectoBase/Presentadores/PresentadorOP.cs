@@ -155,7 +155,17 @@ namespace ProyectoBase.Presentadores
             var especificacionesDefectos = _repositoryED.GetTodos();
             return especificacionesDefectos.ToList();
         }
-        
+        internal List<EspecificacionDeDefecto> ObtenerEspecificacionesDefectosObservado()
+        {
+            var especificacionesDefectos = _repositoryED.GetTodos().Where(e => e.Tipo.Equals("Observado"));
+            return especificacionesDefectos.ToList();
+        }
+        internal List<EspecificacionDeDefecto> ObtenerEspecificacionesDefectosReprocesado()
+        {
+            var especificacionesDefectos = _repositoryED.GetTodos().Where(e => e.Tipo.Equals("Reprocesado")); ;
+            return especificacionesDefectos.ToList();
+        }
+
         internal List<Modelo> getModelos()
         {
             return _repositoryModelo.GetTodos().ToList();

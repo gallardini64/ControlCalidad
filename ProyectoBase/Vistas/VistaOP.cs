@@ -2,6 +2,7 @@
 using ProyectoBase.Interfaces;
 using ProyectoBase.Presentadores;
 using ProyectoBase.Vistas;
+using ProyectoBase.Vistas.ControlesDeUsuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,30 +17,51 @@ namespace ProyectoBase
 {
     public partial class VistaOP : FormBase<PresentadorOP> , IVistaOP
     {
-       
+        private List<DefectoAgregar> _panelesDefecto = new List<DefectoAgregar>();
         public VistaOP(PresentadorOP presentador) : base(presentador)
         {
             InitializeComponent();
             Presentador.SetVista(this);
-            CargarDefectos();
+            CargarDefectosDeReprocesado();
+            CargarDefectosDeObservado();
             Presentador.GenerarOtraVista();
             Presentador.CargarOPPausada();
             cbPie.DataSource = Enum.GetValues(typeof(Pie));
-            btAgregar.Enabled = false;
-            btQuitar.Enabled = false;
-            btParPrimera.Enabled = false;
+            btAgregarParPrimera.Enabled = false;
             hermanadoVista1.setVista(this);
         }
 
-        private void CargarDefectos()
+        private void CargarDefectosDeReprocesado()
         {
-            var especificacionDeDefectos = Presentador.ObtenerEspecificacionesDefectos();
-            bindingSourceED.DataSource = especificacionDeDefectos;
-            foreach (DataGridViewRow item in DataGridDefectos.Rows)
+                  
+            List<EspecificacionDeDefecto> especificacionDeDefectos = Presentador.ObtenerEspecificacionesDefectosReprocesado();
+            int cant = especificacionDeDefectos.Count;
+            for (int i = 0; i < cant; i++)
             {
-                item.Cells[2].Value = 0;
+                DefectoAgregar panel = new DefectoAgregar();
+                panel.setParametros(this, especificacionDeDefectos[i].Id);
+                panel.Location = new Point(defectoAgregarRep.Location.X, defectoAgregarRep.Location.Y + 90 * i);
+                pReprocesado.Controls.Add(panel);
+                _panelesDefecto.Add(panel);
             }
-            
+            //bindingSourceED.DataSource = especificacionDeDefectos;
+            //foreach (DataGridViewRow item in DataGridDefectos.Rows)
+            //{
+            //    item.Cells[2].Value = 0;
+            //}
+        }
+        private void CargarDefectosDeObservado()
+        {
+            List<EspecificacionDeDefecto> especificacionDeDefectos = Presentador.ObtenerEspecificacionesDefectosObservado();
+            int cant = especificacionDeDefectos.Count;
+            for (int i = 0; i < cant; i++)
+            {
+                DefectoAgregar panel = new DefectoAgregar();
+                panel.setParametros(this, especificacionDeDefectos[i].Id);
+                panel.Location = new Point(defectoAgregarObs.Location.X, defectoAgregarRep.Location.Y + 90 * i);
+                pObservado.Controls.Add(panel);
+                _panelesDefecto.Add(panel);
+            }
         }
 
         internal void QuitarPar(string calidad)
@@ -60,9 +82,13 @@ namespace ProyectoBase
         private void agregar_Click(object sender, EventArgs e)
         {
             int id = (int)DataGridDefectos.SelectedRows[0].Cells[3].Value;
-            var pie = cbPie.Text;
+            string pie = cbPie.Text;
+            AgregarDefecto(id,pie);
+        }
+        public void AgregarDefecto(int id, string pie)
+        {
             Presentador.AgregarDefecto(id, pie);
-            agregarDefectoATabla();
+            //agregarDefectoATabla();
         }
 
         private void quitar_Click(object sender, EventArgs e)
@@ -122,9 +148,12 @@ namespace ProyectoBase
 
         public void ActivarControles(OrdenDeProduccion op)
         {
-            btAgregar.Enabled = true;
-            btQuitar.Enabled = true;
-            btParPrimera.Enabled = true;
+            foreach (DefectoAgregar item in _panelesDefecto)
+            {
+                item.Activar();
+            }
+            btAgregarParPrimera.Enabled = true;
+            btQuitarParPrimera.Enabled = true;
             tbOpNum.Text = op.Numero.ToString();
             tbFec.Text = op.Fecha.ToString();
             tbTurno.Text = Presentador.ObtenerTurnoActual().ToString();
@@ -132,8 +161,12 @@ namespace ProyectoBase
 
         public void DesactivarControles()
         {
-            btAgregar.Enabled = false;
-            btQuitar.Enabled = false;
+            foreach (DefectoAgregar item in _panelesDefecto)
+            {
+                item.Desactivar();
+            }
+            btAgregarParPrimera.Enabled = false;
+            btQuitarParPrimera.Enabled = false;
             btHermanado.Enabled = true;
         }
 
