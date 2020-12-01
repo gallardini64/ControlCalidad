@@ -156,3 +156,47 @@ G:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\Proyec
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.HermanadoVista.resources
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaPantallaGeneral.resources
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.DefectoAgregar.resources
+C:\soft\ProyectoBase\bin\Debug\DB\ControlCalidadDB.mdf
+C:\soft\ProyectoBase\bin\Debug\DB\ControlCalidadDB_log.ldf
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.exe.config
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.exe
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.pdb
+C:\soft\ProyectoBase\bin\Debug\EntityFramework.dll
+C:\soft\ProyectoBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\soft\ProyectoBase\bin\Debug\MetroFramework.Design.dll
+C:\soft\ProyectoBase\bin\Debug\MetroFramework.dll
+C:\soft\ProyectoBase\bin\Debug\MetroFramework.Fonts.dll
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.Datos.dll
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.Dominio.dll
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+C:\soft\ProyectoBase\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\soft\ProyectoBase\bin\Debug\Unity.Abstractions.dll
+C:\soft\ProyectoBase\bin\Debug\Unity.Container.dll
+C:\soft\ProyectoBase\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.Datos.pdb
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.Datos.dll.config
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.Dominio.pdb
+C:\soft\ProyectoBase\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+C:\soft\ProyectoBase\bin\Debug\EntityFramework.xml
+C:\soft\ProyectoBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\soft\ProyectoBase\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\soft\ProyectoBase\bin\Debug\Unity.Abstractions.pdb
+C:\soft\ProyectoBase\bin\Debug\Unity.Container.pdb
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Presentacion.csprojAssemblyReference.cache
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Properties.Resources.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.DefectoAgregar.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.HermanadoVista.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.ControlesDeUsuario.Modelos.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.CrearOPVista.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.FormBase.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaAcceso.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaGestionarModelo.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaInicio.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.VistaOP.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaPantallaGeneral.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Vistas.VistaSupervisorLinea.resources
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Presentacion.csproj.GenerateResource.cache
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Presentacion.csproj.CoreCompileInputs.cache
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.Presentacion.csproj.CopyComplete
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.exe
+C:\soft\ProyectoBase\obj\Debug\ProyectoBase.pdb

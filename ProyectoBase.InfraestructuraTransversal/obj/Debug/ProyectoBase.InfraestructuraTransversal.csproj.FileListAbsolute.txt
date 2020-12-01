@@ -22,3 +22,8 @@ D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTran
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+C:\soft\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+C:\soft\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
+C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb

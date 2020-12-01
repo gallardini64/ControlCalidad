@@ -82,3 +82,27 @@ J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\
 J:\4to Año\Ingeniería de Software\TPN° 1\Codigo\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio4.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio3.resources
 D:\Luciano\facultad\4to\IS\TP1\ControlDeCalidad\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio4.resources
+C:\soft\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
+C:\soft\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll.config
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.pdb
+C:\soft\ProyectoBase.Datos\bin\Debug\EntityFramework.dll
+C:\soft\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.dll
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.pdb
+C:\soft\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+C:\soft\ProyectoBase.Datos\bin\Debug\EntityFramework.xml
+C:\soft\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csprojAssemblyReference.cache
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Inicial.resources
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio.resources
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio2.resources
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio3.resources
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Cambio4.resources
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CoreCompileInputs.cache
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CopyComplete
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.dll
+C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
