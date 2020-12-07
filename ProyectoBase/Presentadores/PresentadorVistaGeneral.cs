@@ -11,7 +11,7 @@ namespace ProyectoBase.Presentadores
 {
     public class PresentadorVistaGeneral : PresentadorBase<IVistaGeneral>
     {
-        private IRepository<OrdenDeProduccion> _repository;
+        //private IRepository<OrdenDeProduccion> _repository;
 
         internal void ActualizarPantalla(object sender, Defecto d)
         {

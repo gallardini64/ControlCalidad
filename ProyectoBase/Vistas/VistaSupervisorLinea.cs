@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace ProyectoBase.Vistas
 {
-    public partial class VistaSupervisorLinea : Form, IVistaOP
+    public partial class VistaSupervisorLinea : Form, IVistaOP, IVistaSupervisorDeLinea
     {
         private PresentadorOP _presentador;
         protected int mov;
@@ -38,10 +38,14 @@ namespace ProyectoBase.Vistas
             throw new NotImplementedException();
         }
 
-        internal void confirmarNuevaOrden(int numero,LineaDeTrabajo linea, DateTime fecha, Dominio.Color color, Modelo modelo)
+        internal void confirmarNuevaOrden(int numero,LineaDeTrabajo linea, DateTime fecha, Dominio.Color color)
         {
-            _presentador.confirmarNuevaOrden(numero,linea, fecha, color, modelo);
+            _presentador.confirmarNuevaOrden(numero,linea, fecha, color);
             crearOPVista1.Cerrar();
+        }
+        public void MostrarObjetivo(int objetivo)
+        {
+            
         }
 
         public void MostrarMensaje(string mensaje, bool esError = false)
@@ -167,10 +171,15 @@ namespace ProyectoBase.Vistas
             btReanudar.Enabled = true;
             btReanudar.Visible = true;
             btFinalizar.Enabled = true;
-            ListarDefectos(op.Defectos);
+            ListarDefectos(op.HorarioActual.Defectos);
         }
 
         public void LimpiarCamposOP()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IVistaSupervisorDeLinea.ListarDefectos(ICollection<Defecto> defectos)
         {
             throw new NotImplementedException();
         }

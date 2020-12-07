@@ -11,20 +11,25 @@ namespace ProyectoBase.Dominio
     {
         public int Numero { get; set; }
         public DateTime Fecha { get; set; }
-        public virtual ICollection<Defecto> Defectos { get; set; }
-        public virtual ICollection<Par> Pares { get; set; }
-        public virtual ICollection<Periodo> Periodos { get; set; }
+
+        public virtual ICollection<Horario> Horarios { get; set; }
         public virtual Modelo Modelo { get; set; }
         public virtual Color Color { get; set; }
         public virtual LineaDeTrabajo LineaDeTrabajo { get; set; }
+        public virtual Horario HorarioActual { get; set; }
 
         private Estado estado;
         public OrdenDeProduccion()
         {
-            Periodos = new List<Periodo>();
-            Defectos = new List<Defecto>();
+            Horarios = new List<Horario>();
             estado = Dominio.Estado.Activa;
-            Pares = new List<Par>();
+
+        }
+        public void IniciarNuevoHorario(Turno turno)
+        {
+            Horario h = new Horario(turno);
+            Horarios.Add(h);
+            HorarioActual = h;
         }
         public string Estado
         {
@@ -53,33 +58,67 @@ namespace ProyectoBase.Dominio
         }
 
 
-        public void AgregarDefecto(EspecificacionDeDefecto especDe, string pie, DateTime now)
+        public bool AgregarDefecto(int numero,EspecificacionDeDefecto especDe, string pie, DateTime now)
         {
-            var defecto = new Defecto(especDe, pie, now);
-            Defectos.Add(defecto);
+            if (estado == Dominio.Estado.Activa)
+            {
+                HorarioActual.AgregarDefecto(numero, especDe, pie, now);
+                return true;
+            }
+            else
+            {
+                if ((DateTime.Now - HorarioActual.Fin).TotalMinutes < 10)
+                {
+                    HorarioActual.AgregarDefecto(numero, especDe, pie, now);
+                    return true;
+                }
+            }
+            return false;
         }
         public void ActualizarHorasOcupadas()
         {
-            Periodos.LastOrDefault().cantidadDeHorasOcupadas++;
-            // TODO //
+            Horarios.LastOrDefault().CantidadDeHorasOcupadas++;
         }
 
         public void QuitarDefecto(EspecificacionDeDefecto especDe)
         {
-            var defecto = Defectos.LastOrDefault(d => d.especificacion == especDe);
-            Defectos.Remove(defecto);
+            var defecto = HorarioActual.Defectos.LastOrDefault(d => d.especificacion == especDe);
+            HorarioActual.Defectos.Remove(defecto);
         }
 
-        public void agregarTurno(Turno turnoActual)
+        public void CrearNuevoHorario(Turno turnoActual)
         {
-            var p = new Periodo(turnoActual);
-            Periodos.Add(p);
+            var p = new Horario(turnoActual);
+            Horarios.Add(p);
         }
 
-        public void AgregarPar(string calidad)
+        public bool ActualizarPares(int numero,string calidad)
         {
-            Par par = new Par(DateTime.Now, calidad);
-            Pares.Add(par);
+            if (estado == Dominio.Estado.Activa)
+            {
+                HorarioActual.AgregarPar(numero,calidad);
+                return true;
+            }
+            else
+            {
+                if ((DateTime.Now - HorarioActual.Fin).TotalMinutes < 10)
+                {
+                    HorarioActual.AgregarPar(numero,calidad);
+                    return true;
+                }
+            }
+            return false;
+
+
+
+
+
+        }
+
+        public void PausarOP()
+        {
+            Estado = "Pausada";
+            HorarioActual.Fin = DateTime.Now;
         }
     }
     

@@ -37,8 +37,7 @@ namespace ProyectoBase.Vistas
         {
             _vista.confirmarNuevaOrden(int.Parse(tbNumero.Text),
                                         (LineaDeTrabajo) cbLinea.SelectedValue,dpFecha.Value,
-                                        (Dominio.Color)cbColor.SelectedItem,
-                                        (Modelo)cbModelo.SelectedItem);
+                                        (Dominio.Color)cbColor.SelectedItem);
             _vista.ActivarControles();
         }
 

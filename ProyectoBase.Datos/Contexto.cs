@@ -57,7 +57,7 @@ namespace ProyectoBase.Datos
         public DbSet<Modelo> Modelos { get; set; }
         public DbSet<OrdenDeProduccion> OrdenesDeProduccion { get; set; }
         public DbSet<Par> Pares { get; set; }
-        public DbSet<Periodo> Periodos { get; set; }
+        public DbSet<Horario> Periodos { get; set; }
         public DbSet<Turno> Turnos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Rol> Roles{ get; set; }

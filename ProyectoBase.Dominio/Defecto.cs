@@ -13,10 +13,10 @@ namespace ProyectoBase.Dominio
         {
 
         }
-        public Defecto(EspecificacionDeDefecto especDe, string text, DateTime now)
+        public Defecto(EspecificacionDeDefecto especDe, string pie, DateTime now)
         {
             hora = now;
-            Pie = text;
+            Pie = pie;
             especificacion = especDe;
         }
 

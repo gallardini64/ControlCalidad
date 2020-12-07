@@ -18,17 +18,17 @@ namespace ProyectoBase.Presentadores
     public class PresentadorOP : PresentadorBase<IVistaOP>
     {
         public EventHandler<Defecto> agregaDefecto;
-        private VistaSupervisorLinea _vistaSL;
-        private OrdenDeProduccion _op;
-        private readonly IRepository<OrdenDeProduccion> _repository;
-        private readonly IRepository<EspecificacionDeDefecto> _repositoryED;
-        private readonly IRepository<Modelo> _repositoryModelo;
-        private readonly IRepository<Color> _repositoryColor;
-        private readonly IRepository<Turno> _repositoryTurno;
-        private readonly IRepository<Empleado> _repositoryEmpleado;
-        private readonly IRepository<LineaDeTrabajo> _repositoryLineaDeTrabajo;
-        private Sesion _sesionSupLinea;
-        private Sesion _sesionSupCalidad;
+        protected IVistaSupervisorDeLinea _vistaSL;
+        protected OrdenDeProduccion _op;
+        protected  IRepository<OrdenDeProduccion> _repository;
+        protected  IRepository<EspecificacionDeDefecto> _repositoryED;
+        protected  IRepository<Modelo> _repositoryModelo;
+        protected  IRepository<Color> _repositoryColor;
+        protected  IRepository<Turno> _repositoryTurno;
+        protected  IRepository<Empleado> _repositoryEmpleado;
+        protected  IRepository<LineaDeTrabajo> _repositoryLineaDeTrabajo;
+        protected Sesion _sesionSupLinea;
+        //private Sesion _sesionSupCalidad;
 
         public PresentadorOP(IRepository<OrdenDeProduccion> repository, 
                              IRepository<EspecificacionDeDefecto> repositoryED,
@@ -48,6 +48,9 @@ namespace ProyectoBase.Presentadores
             Reloj.RelojCambiaHora += guardarDatosHora;
             
         }
+        public PresentadorOP()
+        {
+        }
 
         public void CargarOPPausada()
         {
@@ -64,12 +67,12 @@ namespace ProyectoBase.Presentadores
 
         internal void AgregarPar(string calidad)
         {
-            _op.AgregarPar(calidad);
+            _op.ActualizarPares(1,calidad);
         }
 
         internal void quitarPar(string calidad)
         {
-            _op.Pares.Remove(_op.Pares.LastOrDefault(e => e.Calidad == calidad));
+            _op.HorarioActual.Pares.Remove(_op.HorarioActual.Pares.LastOrDefault(e => e.Calidad == calidad));
         }
 
         internal void AsignarSesionActual(Sesion sesion)
@@ -79,7 +82,7 @@ namespace ProyectoBase.Presentadores
 
         internal void PausarOP()
         {
-            _op.Estado = "Pausada";
+            _op.PausarOP();
             Vista.DesactivarControles();
             _repository.Modificar(_op);
 
@@ -107,30 +110,41 @@ namespace ProyectoBase.Presentadores
         {
             _op = new OrdenDeProduccion();
         }
-       
-        internal void confirmarNuevaOrden(int numero, LineaDeTrabajo linea, DateTime fecha, Color color, Modelo modelo)
+       public void SeleccionarModelo(int sku)
+        {
+            _op.Modelo = _repositoryModelo.GetTodos().FirstOrDefault(m => m.SKU == sku);
+            _vistaSL.MostrarObjetivo(_op.Modelo.Objetivo); 
+        }
+        public void confirmarNuevaOrden(int numero, LineaDeTrabajo linea, DateTime fecha, Color color)
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
             Turno turnoActual = new Turno();
             foreach (var turno in turnos)
             {
-                if (DateTime.Now.Hour >= turno.Inicio.Hour && DateTime.Now.Hour <= turno.Fin.Hour)
+                if (DateTime.Now.Hour >= turno.Inicio && DateTime.Now.Hour <= turno.Fin)
                 {
                     turnoActual = turno;
                 }
             }
-            _op.Numero = numero;
-            _op.LineaDeTrabajo = linea;
-            _op.Fecha = fecha;
-            _op.Color = color;
-            _op.Modelo = modelo;
-            _op.agregarTurno(turnoActual);
-            _repository.Agregar(_op);
+            if (_repository.GetConFiltro(op => op.Estado == Estado.Activa.ToString() && op.LineaDeTrabajo.Numero == linea.Numero) == null)
+            {
+                _op.Numero = numero;
+                _op.LineaDeTrabajo = linea;
+                _op.Fecha = fecha;
+                _op.Color = color;
+                _op.CrearNuevoHorario(turnoActual);
+                _repository.Agregar(_op);
+            }
+            else
+            {
+                _vistaSL.MostrarMensaje("La linea seleccionada ya se encuentra ocupada");
+            }
+
         }
        public Turno ObtenerTurnoActual()
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
-            Turno turnoActual = turnos.FirstOrDefault(t => DateTime.Now.Hour >= t.Inicio.Hour && DateTime.Now.Hour <= t.Fin.Hour);
+            Turno turnoActual = turnos.FirstOrDefault(t => DateTime.Now.Hour >= t.Inicio && DateTime.Now.Hour <= t.Fin);
             return turnoActual;
 
             //foreach (var turno in turnos)
@@ -173,7 +187,7 @@ namespace ProyectoBase.Presentadores
 
         internal void ParAPrimera()
         {
-            _op.AgregarPar(Dominio.Calidad.Primera.ToString());
+            _op.ActualizarPares(1,Dominio.Calidad.Primera.ToString());
         }
 
         internal List<Color> getColores()
@@ -196,8 +210,8 @@ namespace ProyectoBase.Presentadores
         public void AgregarDefecto(int id, string pie)
         {
             var especDe = _repositoryED.Get(id);
-            _op.AgregarDefecto(especDe, pie, DateTime.Now);
-            OnAgregaDefecto(_op.Defectos.LastOrDefault());
+            _op.AgregarDefecto(1,especDe, pie, DateTime.Now);
+            OnAgregaDefecto(_op.HorarioActual.Defectos.LastOrDefault());
             ActualizarVistaDatos();
         }
 
@@ -229,9 +243,9 @@ namespace ProyectoBase.Presentadores
 
         internal void ActualizarVistaDatos()
         {
-            _vistaSL.ListarDefectos(_op.Defectos);
+            _vistaSL.ListarDefectos(_op.HorarioActual.Defectos);
         }
-        public void setVistaSL(VistaSupervisorLinea vista)
+        public void setVistaSL(IVistaSupervisorDeLinea vista)
         {
             _vistaSL = vista;
             _vistaSL.setPresentador(this);

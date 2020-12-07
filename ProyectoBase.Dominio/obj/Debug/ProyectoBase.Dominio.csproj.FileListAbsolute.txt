@@ -40,3 +40,12 @@ C:\soft\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileIn
 C:\soft\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CopyComplete
 C:\soft\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
 C:\soft\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\bin\Debug\ProyectoBase.Dominio.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csprojAssemblyReference.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CoreCompileInputs.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.csproj.CopyComplete
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Dominio\obj\Debug\ProyectoBase.Dominio.pdb

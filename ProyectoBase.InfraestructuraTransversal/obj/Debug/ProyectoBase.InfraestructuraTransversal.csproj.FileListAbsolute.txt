@@ -27,3 +27,9 @@ C:\soft\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.Infraestr
 C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
 C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
 C:\soft\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csprojAssemblyReference.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.csproj.CoreCompileInputs.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.InfraestructuraTransversal\obj\Debug\ProyectoBase.InfraestructuraTransversal.pdb

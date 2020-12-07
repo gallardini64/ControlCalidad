@@ -106,3 +106,23 @@ C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CoreCompileInputs
 C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CopyComplete
 C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.dll
 C:\soft\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB.mdf
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\DB\ControlCalidadDB_log.ldf
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll.config
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.Datos.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\EntityFramework.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.Dominio.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\ProyectoBase.InfraestructuraTransversal.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\EntityFramework.xml
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\bin\Debug\EntityFramework.SqlServer.xml
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csprojAssemblyReference.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CoreCompileInputs.cache
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.CopyComplete
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.dll
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.pdb
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.Migrations.Inicial.resources
+J:\4to Año\Ingeniería de Software\TPN° 1\Proyecto\ProyectoBase.Datos\obj\Debug\ProyectoBase.Datos.csproj.GenerateResource.cache

@@ -85,6 +85,7 @@
     <Compile Include="Interfaces\IVistaAcceso.cs" />
     <Compile Include="Interfaces\IVistaGeneral.cs" />
     <Compile Include="Interfaces\IVistaInicio.cs" />
+    <Compile Include="Interfaces\IVistaSupervisorDeLinea.cs" />
     <Compile Include="Presentadores\PresentadorAcceso.cs" />
     <Compile Include="Presentadores\PresentadorInicio.cs" />
     <Compile Include="Presentadores\PresentadorOP.cs" />

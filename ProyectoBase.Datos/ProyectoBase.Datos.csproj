@@ -68,25 +68,9 @@
   <ItemGroup>
     <Compile Include="Contexto.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
-    <Compile Include="Migrations\202009162254232_Inicial.cs" />
-    <Compile Include="Migrations\202009162254232_Inicial.designer.cs">
-      <DependentUpon>202009162254232_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009180737037_Cambio.cs" />
-    <Compile Include="Migrations\202009180737037_Cambio.designer.cs">
-      <DependentUpon>202009180737037_Cambio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009180813300_Cambio2.cs" />
-    <Compile Include="Migrations\202009180813300_Cambio2.designer.cs">
-      <DependentUpon>202009180813300_Cambio2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009190452576_Cambio3.cs" />
-    <Compile Include="Migrations\202009190452576_Cambio3.designer.cs">
-      <DependentUpon>202009190452576_Cambio3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009190505578_Cambio4.cs" />
-    <Compile Include="Migrations\202009190505578_Cambio4.designer.cs">
-      <DependentUpon>202009190505578_Cambio4.cs</DependentUpon>
+    <Compile Include="Migrations\202012062122045_Inicial.cs" />
+    <Compile Include="Migrations\202012062122045_Inicial.designer.cs">
+      <DependentUpon>202012062122045_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,22 +102,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009162254232_Inicial.resx">
-      <DependentUpon>202009162254232_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009180737037_Cambio.resx">
-      <DependentUpon>202009180737037_Cambio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009180813300_Cambio2.resx">
-      <DependentUpon>202009180813300_Cambio2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009190452576_Cambio3.resx">
-      <DependentUpon>202009190452576_Cambio3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009190505578_Cambio4.resx">
-      <DependentUpon>202009190505578_Cambio4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012062122045_Inicial.resx">
+      <DependentUpon>202012062122045_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
