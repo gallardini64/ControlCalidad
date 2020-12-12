@@ -21,6 +21,7 @@ namespace ProyectoBase.Dominio
         {
             Defectos = new List<Defecto>();
             Pares = new List<Par>();
+            Inicio = turno.Inicio;
             Turno = turno;
         }
         public void AgregarPar(int numero,string calidad)

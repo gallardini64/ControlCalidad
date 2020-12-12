@@ -60,59 +60,55 @@ namespace ProyectoBase.Dominio
 
         public bool AgregarDefecto(int numero,EspecificacionDeDefecto especDe, string pie, DateTime now)
         {
-            if (estado == Dominio.Estado.Activa)
+
+            if (HorarioActual.Turno.SoyTurnoActual())
             {
                 HorarioActual.AgregarDefecto(numero, especDe, pie, now);
                 return true;
             }
             else
             {
-                if ((DateTime.Now - HorarioActual.Fin).TotalMinutes < 10)
+                if ((int)HorarioActual.Turno.HeFilalizadoHace().TotalMinutes <
+                    FactoriaDeEstrategias.GetInstancia().GetEstrategiaTiempoLimite().getMinLimiteDeTiempoDeOperaciones)
                 {
                     HorarioActual.AgregarDefecto(numero, especDe, pie, now);
                     return true;
                 }
             }
             return false;
+
         }
         public void ActualizarHorasOcupadas()
         {
             Horarios.LastOrDefault().CantidadDeHorasOcupadas++;
         }
-
         public void QuitarDefecto(EspecificacionDeDefecto especDe)
         {
             var defecto = HorarioActual.Defectos.LastOrDefault(d => d.especificacion == especDe);
             HorarioActual.Defectos.Remove(defecto);
         }
-
         public void CrearNuevoHorario(Turno turnoActual)
         {
             var p = new Horario(turnoActual);
             Horarios.Add(p);
         }
-
         public bool ActualizarPares(int numero,string calidad)
         {
-            if (estado == Dominio.Estado.Activa)
+            if (HorarioActual.Turno.SoyTurnoActual())
             {
                 HorarioActual.AgregarPar(numero,calidad);
                 return true;
             }
             else
             {
-                if ((DateTime.Now - HorarioActual.Fin).TotalMinutes < 10)
+                if ((int) HorarioActual.Turno.HeFilalizadoHace().TotalMinutes < 
+                    FactoriaDeEstrategias.GetInstancia().GetEstrategiaTiempoLimite().getMinLimiteDeTiempoDeOperaciones)
                 {
                     HorarioActual.AgregarPar(numero,calidad);
                     return true;
                 }
             }
             return false;
-
-
-
-
-
         }
 
         public void PausarOP()

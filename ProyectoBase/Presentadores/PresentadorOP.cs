@@ -117,15 +117,7 @@ namespace ProyectoBase.Presentadores
         }
         public void confirmarNuevaOrden(int numero, LineaDeTrabajo linea, DateTime fecha, Color color)
         {
-            List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
-            Turno turnoActual = new Turno();
-            foreach (var turno in turnos)
-            {
-                if (DateTime.Now.Hour >= turno.Inicio && DateTime.Now.Hour <= turno.Fin)
-                {
-                    turnoActual = turno;
-                }
-            }
+            Turno turnoActual = _repositoryTurno.GetTodos().FirstOrDefault(t => t.SoyTurnoActual() == true);
             if (_repository.GetConFiltro(op => op.Estado == Estado.Activa.ToString() && op.LineaDeTrabajo.Numero == linea.Numero) == null)
             {
                 _op.Numero = numero;
@@ -144,7 +136,7 @@ namespace ProyectoBase.Presentadores
        public Turno ObtenerTurnoActual()
         {
             List<Turno> turnos = _repositoryTurno.GetTodos().ToList();
-            Turno turnoActual = turnos.FirstOrDefault(t => DateTime.Now.Hour >= t.Inicio && DateTime.Now.Hour <= t.Fin);
+            Turno turnoActual = turnos.FirstOrDefault(t => t.SoyTurnoActual() == true);
             return turnoActual;
 
             //foreach (var turno in turnos)

@@ -47,6 +47,8 @@
     <Compile Include="Empleado.cs" />
     <Compile Include="EspecificacionDeDefecto.cs" />
     <Compile Include="Estado.cs" />
+    <Compile Include="EstrategiaTiempoLimite.cs" />
+    <Compile Include="FactoriaDeEstrategias.cs" />
     <Compile Include="LineaDeTrabajo.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="OrdenDeProduccion.cs" />
